@@ -1,0 +1,51 @@
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 70vw;
+    height: 70vh;
+}
+
+.dialog{
+    width: 100%;
+    height: 100%;
+}
+
+.dialog_text{
+    position: absolute;
+    width: 50vw;
+    height: 30vh;
+    left: 20vw;
+    background-color: blueviolet;
+}
+
+.dialog_responses{
+    position: relative;
+    width: 40vw;
+    height: 30vh;
+    top: 30vh;
+    background-color: aquamarine;
+}
+
+.dialog_img{
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    top: 18vw;
+    background-image: url("https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}

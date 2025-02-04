@@ -1,0 +1,54 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 70vw;
+    height: 70vh;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 28vw;
+    height: 23vh;
+    margin-left: 5vh;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 28vw;
+    height: 42vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    width: 33vw;
+    height: 23vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+.player:first-of-type{
+    margin-left: 0vh;
+}
