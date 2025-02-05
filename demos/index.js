@@ -1,26 +1,30 @@
-function getJsonFileSync(filename) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://localhost:8000/${filename}`, false);
-    try {
-        xhr.send();
-
-        if (xhr.status === 200) {
-            let data = JSON.parse(xhr.responseText);
-            return data;
-        } else {
-            throw new Error('Błąd odpowiedzi z serwera');
-        }
-    } catch (error) {
-        console.error('Błąd podczas pobierania danych:', error);
+class teacher{
+    constructor(teacher){
+        this.teacherJsonName = teacher;
+        this.teacherName;
+        this.teacherImageName;
+        this.imagePosition;
+        this.numberOfQuestions;
+        this.questions;
+        this.init()
     }
+
+    init(){
+        teacherJson = getJson(this.teacher);
+        this.teacherImageName = teacherJson.teacher.imageName;
+        this.imagePosition = teacherJson.teacher.position;
+        this.numberOfQuestions = teacherJson.numberOfQuestions;
+        this.questions = teacherJson.quiz;
+    }
+
+
+    loadDialog(){
+        document.getElementById("game_window");
+        let dialog = document.createElement("div");
+        dialog.className = pass;
+    }
+
 }
-
-function loadDialog(){
-    document.getElementById("game_window");
-    let dialog = document.createElement("div");
-}
-
-
 //style for image
 `
 position: absolute;
