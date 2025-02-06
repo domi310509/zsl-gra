@@ -13,24 +13,49 @@
 }
 
 .dialog_text{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 30vh;
+    left: 20vw;
+    background-color: pink;
+    top: 2vh;
+    overflow: hidden;
+    font-size: calc(4vw + 4vh + 2vmin);
+}
+
+.dialog_responses{
     position: absolute;
     width: 50vw;
     height: 30vh;
     left: 20vw;
     background-color: blueviolet;
+    top: 41vh;
 }
 
-.dialog_responses{
-    position: relative;
-    width: 40vw;
-    height: 30vh;
-    top: 30vh;
+.dialog_img{
+    position: absolute;
+    width: 30vh;
+    height: 40vh;
+    top: 31vh;
+    left: 1vw;
     background-color: aquamarine;
 }
-
 .row{
     display: flex;
     flex-direction: row;
+}
+
+.quiz_section{
+    display: flex;
+    height: 15vh;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: calc(4vw + 4vh + 2vmin);
 }
 
 .column{

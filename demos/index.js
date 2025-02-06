@@ -1,32 +1,9 @@
-class teacher{
-    constructor(teacher){
-        this.teacherJsonName = teacher;
-        this.teacherName;
-        this.teacherImageName;
-        this.imagePosition;
-        this.numberOfQuestions;
-        this.questions;
-        this.init()
-    }
+let main = getTeacher("debug");
+main.loadDialogDOM();
+main.quiz(0);
 
-    init(){
-        teacherJson = getJson(this.teacher);
-        this.teacherImageName = teacherJson.teacher.imageName;
-        this.imagePosition = teacherJson.teacher.position;
-        this.numberOfQuestions = teacherJson.numberOfQuestions;
-        this.questions = teacherJson.quiz;
-    }
-
-
-    loadDialog(){
-        document.getElementById("game_window");
-        let dialog = document.createElement("div");
-        dialog.className = pass;
-    }
-
-}
 //style for image
-`
+a = `
 position: absolute;
 width: 30vw;
 height: 30vh;
