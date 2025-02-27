@@ -1,6 +1,9 @@
 let main = getTeacher("debug");
 main.loadDialogDOM();
 main.quiz(0);
+let answer = function(i){
+    main.quizHandler(i);
+};
 
 //style for image
 a = `
