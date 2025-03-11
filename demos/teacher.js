@@ -23,14 +23,10 @@ class teacher{
                 Pytanie
             </div>
             <div class="dialog_responses">
-                    <div class="row">
-                        <section class="quiz_section" id="answer1" onClick="answer(1)">Opcja 1</section>
-                        <section class="quiz_section" id="answer2" onClick="answer(2)">Opcja 2</section>
-                    </div>
-                    <div class="row">
-                        <section class="quiz_section" id="answer3" onClick="answer(3)">Opcja 3</section>
-                        <section class="quiz_section" id="answer4" onClick="answer(4)">Opcja 4</section>
-                    </div>
+                    <section class="quiz_section" id="answer1" onClick="answer(1)">Opcja 1</section>
+                    <section class="quiz_section" id="answer2" onClick="answer(2)">Opcja 2</section>
+                    <section class="quiz_section" id="answer3" onClick="answer(3)">Opcja 3</section>
+                    <section class="quiz_section" id="answer4" onClick="answer(4)">Opcja 4</section>
             </div>`
         document.getElementById("game_window").appendChild(dialog);
     }
@@ -94,7 +90,7 @@ function getTeacher(teacherName){
     if(teacherName == "debug"){
         return new teacher("Imie nauczyciela", "./pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
             ["Czy ten kod jest super?", "Tak", ["Nie", "Może", "Niezbyt"]], // question, correct answer, [wrong answers]
-            ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]] 
+            ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]]
         ])
     }
 }

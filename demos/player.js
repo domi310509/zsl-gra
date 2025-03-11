@@ -1,8 +1,9 @@
 class player{
-    constructor(name, year, quizesDone){
+    constructor(name, year){
         this.name = name;
         this.year = year;
         this.quizesDone = [];
-        this.position = 0;
+        this.currentRoom;
+        this.sprite = "";
     }
 }
