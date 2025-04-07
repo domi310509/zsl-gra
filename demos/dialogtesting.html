@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onresize="imageMapResize()">
     <div class="row">
         <div class="game" id="game_window">
         </div>
@@ -20,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="row"> 
+    <div class="row">
         <div class="player" id="player1">
             Gracz 1
         </div>
@@ -37,4 +39,5 @@
     <script src="player.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

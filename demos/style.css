@@ -7,6 +7,22 @@
     height: 70vh;
 }
 
+.popup{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    background-color: pink;
+    top: 5vh;
+    left: 5vw;
+    width: 60vw;
+    height: 30vh;
+    font-size: 100px;
+}
+
+.text{
+    transform: translate(-50%, -50%);
+}
+
 body{
     padding: 0;
     margin: 0;
