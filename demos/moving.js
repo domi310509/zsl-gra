@@ -113,7 +113,7 @@ function mapHandler(id){
             break;
         }
         case 0: {
-            
+            let teacher = getTeacher(0);
             break;
         }
         default: {

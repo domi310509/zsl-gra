@@ -31,6 +31,11 @@ class teacher{
         document.getElementById("game_window").appendChild(dialog);
     }
 
+    something(){
+        self.loadDialogDOM();
+        // do everything for quiz
+    }
+
     quiz(i){ //not scaling function
         let question = document.getElementById("question");
         let answer1 = document.getElementById("answer1");
@@ -45,7 +50,7 @@ class teacher{
         answer3.innerText = answers[2];
         answer4.innerText = answers[3];
         this.currentCorrectAnswer = answers.indexOf(this.questions[i][1]);
-        console.log("Poprawna odpowiedź: ", this.currentCorrectAnswer)
+        console.log("Poprawna odpowiedź: ", this.currentCorrectAnswer);
     }
 
     quizHandler(i){
@@ -87,10 +92,18 @@ function shuffle(array) { // great shuffle algorithm (not mine)
 }
 
 function getTeacher(teacherName){
-    if(teacherName == "debug"){
-        return new teacher("Imie nauczyciela", "./pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
-            ["Czy ten kod jest super?", "Tak", ["Nie", "Może", "Niezbyt"]], // question, correct answer, [wrong answers]
-            ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]]
-        ])
+    switch (teacherName){
+        case "debug": {
+            return new teacher("Imie nauczyciela", "./pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
+                ["Czy ten kod jest super?", "Tak", ["Nie", "Może", "Niezbyt"]], // question, correct answer, [wrong answers]
+                ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]]
+            ]);
+        }
+        case 0: {
+            return new teacher("Śmieć", "./pobrane.jpg", [0, 0], 2, [
+                ["Poprawna odpowiedź to 12", "12", ["11", "10", "2"]],
+                ["Poprawna odpowiedź to 23", "23", ["22", "12", "43"]]
+            ])
+        }
     }
 }

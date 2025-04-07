@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekran Początkowy</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>ZSŁ GRA</h1>
+        <button onclick="startCharacterSelection()">Start</button>
+        <button onclick="showCreators()">Twórcy</button>
+    </div>
+
+    <div id="creators-modal">
+        <div class="modal-content">
+            <h2>Twórcy gry</h2>
+            <ul>
+                <li>Dominik Adamczyk</li>
+                <li>Bolesław Biliński</li>
+                <li>Ksawery Czyż</li>
+                <li>Wojciech Gostyński</li>
+            </ul>
+            <button onclick="closeCreators()">Zamknij</button>
+        </div>
+    </div>
+    <!-- Wybór postaci -->
+    <div id="character-select">
+        <h2>Wybierz postacie</h2>
+        <div id="character-container">
+            <div class="character-slot">
+                <label>Postać 1:</label>
+                <select>
+                    <option>Programista</option>
+                    <option>Informatyk</option>
+                    <option>Robotyk</option>
+                    <option>Fotograf</option>
+                </select>
+            </div>
+            <div class="character-slot">
+                <label>Postać 2:</label>
+                <select>
+                    <option>Programista</option>
+                    <option>Informatyk</option>
+                    <option>Robotyk</option>
+                    <option>Fotograf</option>
+                </select>
+            </div>
+        </div>
+        <button id="addCharacter">Dodaj kolejną postać</button>
+        <button id="startGame" onclick="startGame()">Start</button>
+
+    </div>
+    <script src="start.js"></script>
+    <script src="playerSelect.js"></script>
+    <script src="mainGame.js"></script>
+</body>
+</html>
