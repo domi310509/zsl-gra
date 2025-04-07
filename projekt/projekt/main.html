@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRA</title>
+    <link rel="stylesheet" href="start.css" />
+    <link rel="stylesheet" href="playerSelect.css" />
+    <style>
+      body {
+        background-color: #8542b5;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <h1>ZSŁ GRA</h1>
+      <button onclick="startCharacterSelection()">Start</button>
+      <button onclick="showCreators()">Twórcy</button>
+    </div>
+
+    <div id="creators-modal">
+      <div class="modal-content">
+        <h2>Twórcy gry</h2>
+        <ul>
+          <li>Dominik Adamczyk</li>
+          <li>Bolesław Biliński</li>
+          <li>Ksawery Czyż</li>
+          <li>Wojciech Gostyński</li>
+        </ul>
+        <button onclick="closeCreators()">Zamknij</button>
+      </div>
+    </div>
+
+    <div id="character-select">
+      <h2>Wybierz postacie</h2>
+      <div id="character-container">
+        <div class="character-slot">
+          <label>Gracz 1:</label>
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+        <div class="character-slot">
+          <label>Gracz 2:</label>
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+        <div class="character-slot">
+          <label>Gracz 3:</label>
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+        <div class="character-slot">
+          <label>Gracz 4:</label>
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+      </div>
+      <button id="startGame" onclick="startGame()">Start</button>
+    </div>
+    <script src="start.js"></script>
+    <script src="playerSelect.js"></script>
+    <script src="mainGame.js"></script>
+
+  </body>
+</html>

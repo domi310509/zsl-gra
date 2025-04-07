@@ -1,0 +1,70 @@
+#character-select{
+    visibility: hidden;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    font-size: 16px;
+}
+
+#character-select h2 {
+    margin-bottom: 20px;
+}
+
+#character-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.character-slot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #a650f6;
+}
+
+.character-slot select {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #a650f6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button#addCharacter{
+    background-color: #a650f6;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button#addCharacter:hover {
+    background-color: #c38ff8;
+}
+
+button#addCharacter:disabled {
+    background-color: #d3b0f7;
+    cursor: not-allowed;
+}
+button#startGame{
+    background-color: #a650f6;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
