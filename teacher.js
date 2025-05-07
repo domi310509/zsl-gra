@@ -211,8 +211,8 @@ function getTeacher(teacherName){
   ["Który z autorów jest związany z literaturą XX wieku?", "Czesław Miłosz", ["Adam Mickiewicz", "Józef Ignacy Kraszewski", "Henryk Sienkiewicz"]],
   ["Co to jest motyw przewodni?", "temat, który pojawia się w różnych utworach", ["krótkie streszczenie fabuły", "główna postać w książce", "styl pisania autora"]]
 ]);
-
         }
+ case "matura_angielski": {
    return new teacher("---", "./pobrane.jpg", [0, 0], 50, [
   ["What is the past tense of 'go'?", "went", ["goed", "gone", "going"]],
   ["Which of the following is a synonym for 'happy'?", "joyful", ["sad", "angry", "tired"]],
@@ -265,6 +265,139 @@ function getTeacher(teacherName){
   ["Which sentence is correct?", "He hasn't finished his homework yet.", ["He finished his homework yet.", "He has finish his homework yet.", "He not finished his homework yet."]]
 ]);
 
+        }
+  case "1_klasa_mat": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Ile to -3 + 7?", "4", ["10", "-10", "3"]],
+  ["Pierwiastek kwadratowy z 36 to?", "6", ["9", "12", "5"]],
+  ["Rozwiąż: x + 5 = 9", "4", ["5", "3", "6"]],
+  ["Ile to 30% z 200?", "60", ["40", "70", "50"]],
+  ["Przekształć: 2(x + 3) = ?", "2x + 6", ["2x + 3", "x + 6", "x + 3"]],
+  ["Jakie jest przeciwieństwo liczby -7?", "7", ["-7", "0", "-1"]],
+  ["Układ równań: x = 2, y = 3. Ile to x + y?", "5", ["6", "4", "2"]],
+  ["Ile to 2^4?", "16", ["8", "32", "12"]],
+  ["Która liczba nie jest liczbą pierwszą?", "9", ["11", "7", "13"]],
+  ["W trójkącie suma kątów to?", "180", ["360", "90", "100"]],
+  ["Ile to -8 * 2?", "-16", ["8", "16", "-8"]],
+  ["Równanie: 2x = 10. x = ?", "5", ["10", "2", "20"]],
+  ["Jaki to procent: 50 z 200?", "25", ["20", "50", "10"]],
+  ["Pole kwadratu o boku 6?", "36", ["12", "24", "18"]],
+  ["Ile to 7²?", "49", ["14", "56", "64"]],
+  ["Skróć ułamek 20/100", "1/5", ["1/2", "1/10", "2/5"]],
+  ["Rozwiąż nierówność: x > 3", "x = 4", ["x = 2", "x = 1", "x = 0"]],
+  ["Obwód prostokąta 3x5?", "16", ["15", "12", "18"]],
+  ["x + x + x = 12. x = ?", "4", ["3", "2", "6"]],
+  ["Czy -7 należy do zbioru liczb całkowitych?", "Tak", ["Nie", "Zależy", "Tylko dodatnie"]],
+  ["Suma kątów w czworokącie?", "360", ["180", "270", "90"]]
+]);
+        }
+            
+  case "2_klasa_mat": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Rozwiąż równanie kwadratowe: x² - 5x + 6 = 0", "x = 2, x = 3", ["x = 1, x = 6", "x = -1, x = -6", "x = 2, x = -3"]],
+  ["Funkcja kwadratowa f(x) = x² - 4. Jakie ma pierwiastki?", "x = 2, x = -2", ["x = 1, x = -1", "x = 0, x = -4", "x = -2, x = -2"]],
+  ["Średnia arytmetyczna liczb 2, 5, 7, 10", "6", ["5", "7", "8"]],
+  ["Ile wynosi iloczyn wektora u = (2,3) i wektora v = (4, -1)?", "5", ["6", "2", "4"]],
+  ["Pole prostokąta o bokach 5 i 8", "40", ["30", "50", "45"]],
+  ["Funkcja liniowa f(x) = 2x + 3. Jaki jest jej punkt przecięcia z osią Y?", "3", ["2", "0", "-3"]],
+  ["Równanie kwadratowe x² + 4x - 5 = 0. Rozwiąż", "x = -5, x = 1", ["x = -4, x = 1", "x = 5, x = -1", "x = -1, x = -5"]],
+  ["Mediana liczb 1, 5, 7, 9", "6", ["5", "7", "8"]],
+  ["Oblicz wartość funkcji kwadratowej f(x) = x² - 2x + 1 dla x = 3", "4", ["5", "6", "2"]],
+  ["Oblicz długość wektora u = (3, 4)", "5", ["4", "6", "7"]],
+  ["Oblicz pole koła o promieniu 3", "28.27", ["9.42", "12.57", "24.78"]],
+  ["Rozwiąż nierówność: x² - 6x + 9 > 0", "x ≠ 3", ["x > 3", "x < 3", "x = 3"]],
+  ["Szukaj funkcji odwrotnej do f(x) = 2x + 1", "f⁻¹(x) = (x - 1) / 2", ["f⁻¹(x) = 2x - 1", "f⁻¹(x) = (x + 1) / 2", "f⁻¹(x) = x / 2"]],
+  ["Szukaj średnią z liczb: 10, 15, 20, 25", "17.5", ["20", "18", "22"]],
+  ["Oblicz obwód prostokąta o bokach 7 i 9", "32", ["34", "31", "36"]],
+  ["Funkcja liniowa f(x) = 3x - 4. Co jest współczynnikiem kierunkowym?", "3", ["-4", "2", "1"]],
+  ["Oblicz pole trójkąta o podstawie 6 i wysokości 4", "12", ["24", "18", "8"]],
+  ["Oblicz długość przekątnej prostokąta o bokach 3 i 4", "5", ["6", "4", "7"]],
+  ["Punkty A(1, 2) i B(3, 6). Oblicz odległość między nimi", "4", ["5", "3", "6"]],
+  ["Funkcja kwadratowa y = x² - 2x. Jaka jest jej wartość w punkcie x = 1?", "0", ["1", "-1", "2"]],
+  ["Oblicz wartość wyrażenia 5! (silnia)", "120", ["100", "110", "130"]],
+  ["Oblicz objętość sześcianu o krawędzi 4", "64", ["32", "24", "48"]]
+]);
+        }
+            
+  case "3_klasa_mat": {
+          return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Oblicz sinus kąta 30°", "1/2", ["√3/2", "1", "√2/2"]],
+  ["Oblicz cosinus kąta 60°", "1/2", ["√2/2", "1", "√3/2"]],
+  ["Oblicz tangens kąta 45°", "1", ["0", "√3", "2"]],
+  ["Rozwiąż układ równań: x + y = 5, x - y = 1", "x = 3, y = 2", ["x = 2, y = 3", "x = 4, y = 1", "x = 1, y = 4"]],
+  ["Oblicz pole trójkąta o wierzchołkach A(0, 0), B(3, 0), C(0, 4)", "6", ["12", "3", "9"]],
+  ["Oblicz wartość logarytmu log₁₀(100)", "2", ["1", "3", "10"]],
+  ["Rozwiąż nierówność: log₁₀(x) > 2", "x > 100", ["x > 10", "x < 100", "x > 50"]],
+  ["Oblicz pole powierzchni koła o promieniu 5", "78.54", ["50", "75", "100"]],
+  ["Rozwiąż równanie wykładnicze 2^x = 8", "x = 3", ["x = 2", "x = 1", "x = 4"]],
+  ["Oblicz różnicę kątów α = 120°, β = 30°", "90°", ["100°", "80°", "70°"]],
+  ["Jakie jest prawdopodobieństwo wyrzucenia liczby 6 na kostce do gry?", "1/6", ["1/2", "1/4", "1/3"]],
+  ["Ile jest permutacji z 3 elementów?", "6", ["3", "9", "12"]],
+  ["Oblicz wartość funkcji wykładniczej f(x) = 2^x dla x = 4", "16", ["8", "32", "64"]],
+  ["Oblicz logarytm log₂(32)", "5", ["4", "3", "6"]],
+  ["Wektory u = (3, 4) i v = (-1, 2). Oblicz iloczyn skalarny", "5", ["-2", "4", "6"]],
+  ["Oblicz tangens kąta α, jeśli sin α = 1/2 i cos α = √3/2", "1/√3", ["1/2", "√3/2", "2"]],
+  ["Oblicz kąt α, jeżeli tan α = 1", "45°", ["30°", "60°", "90°"]],
+  ["Jakie jest prawdopodobieństwo wyciągnięcia asa z talii kart?", "1/13", ["1/52", "1/26", "1/39"]],
+  ["Oblicz średnią arytmetyczną liczb: 2, 6, 8", "5.33", ["6", "5", "4"]],
+  ["Ile wynosi suma kątów w trójkącie?", "180°", ["90°", "270°", "360°"]],
+  ["Rozwiąż układ równań: x + 2y = 8, 2x - y = 3", "x = 2, y = 3", ["x = 4, y = 1", "x = 1, y = 4", "x = 3, y = 2"]],
+  ["Rozwiąż nierówność: 2^x < 16", "x < 4", ["x > 2", "x < 3", "x = 4"]]
+]);
+        }
+            
+  case "4_klasa_mat": {
+          return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Oblicz granicę: lim (x→∞) (3x² + 2x) / (x² - 5x)", "3", ["2", "1", "4"]],
+  ["Oblicz pochodną funkcji f(x) = 5x³ - 3x²", "15x² - 6x", ["15x² - 3x", "15x³ - 6x²", "3x² - 6"]],
+  ["Oblicz sumę ciągu arytmetycznego: 2 + 4 + 6 + 8", "20", ["18", "22", "24"]],
+  ["Oblicz granicę: lim (x→0) (sin x) / x", "1", ["0", "∞", "2"]],
+  ["Oblicz funkcję odwrotną do f(x) = 3x + 1", "f⁻¹(x) = (x - 1) / 3", ["f⁻¹(x) = (x + 1) / 3", "f⁻¹(x) = (x - 3) / 2", "f⁻¹(x) = x / 3"]],
+  ["Oblicz sumę nieskończonego ciągu geometrycznego o pierwszym wyrazie 1 i ilorazie 1/2", "2", ["1", "3", "4"]],
+  ["Oblicz obwód koła o promieniu 5", "31.42", ["25", "40", "35"]],
+  ["Oblicz pochodną funkcji f(x) = x⁴ - 4x² + 2", "4x³ - 8x", ["3x² - 2", "4x² - 8", "3x³ - 2x"]],
+  ["Oblicz wartość ciągu geometrycznego: 2, 6, 18, ... po 4 wyrazach", "162", ["54", "64", "128"]],
+  ["Oblicz pole powierzchni kuli o promieniu 4", "201.06", ["100.48", "150", "220"]],
+  ["Oblicz pochodną funkcji f(x) = √x", "1 / 2√x", ["√x", "x / 2", "1 / x"]],
+  ["Oblicz iloczyn skalarny wektorów u = (1, 2, 3) i v = (4, 5, 6)", "32", ["30", "28", "34"]],
+  ["Oblicz długość boku kwadratu, którego pole wynosi 49", "7", ["6", "5", "8"]],
+  ["Oblicz funkcję odwrotną do f(x) = 2x - 3", "f⁻¹(x) = (x + 3) / 2", ["f⁻¹(x) = (x - 3) / 2", "f⁻¹(x) = x / 2", "f⁻¹(x) = (x + 2) / 2"]],
+  ["Oblicz różnicę kątów w trójkącie o kątach 60°, 90° i 30°", "0°", ["30°", "60°", "90°"]],
+  ["Oblicz całkę: ∫(x²) dx", "x³ / 3", ["x²", "2x", "x³"]],
+  ["Oblicz granicę: lim (x→0) (1 - cos x) / x²", "0.5", ["0", "1", "2"]],
+  ["Oblicz sumę nieskończonego ciągu arytmetycznego: 2 + 5 + 8 + ...", "∞", ["5", "4", "3"]],
+  ["Oblicz pochodną funkcji f(x) = sin x", "cos x", ["-sin x", "tan x", "cos² x"]],
+  ["Oblicz pole trapezu o podstawach 4 i 6 oraz wysokości 5", "25", ["20", "18", "22"]],
+  ["Oblicz całkę: ∫(3x²) dx", "x³", ["3x²", "2x³", "x²"]],
+  ["Oblicz długość przekątnej prostokąta o bokach 6 i 8", "10", ["12", "9", "11"]]
+]);
+        }
+            
+  case "5_klasa_mat": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Rozwiąż równanie z parametrem: x² - px + q = 0, gdzie p = 4, q = 5", "x = 1, x = 5", ["x = 2, x = 3", "x = -1, x = 6", "x = 3, x = 4"]],
+  ["Dowód: Suma kątów w trójkącie wynosi 180°", "Tak", ["Nie", "Zależy", "Tylko w prostokątnych"]],
+  ["Rozwiąż nierówność: x² - 6x + 8 < 0", "x ∈ (2, 4)", ["x ∈ (1, 5)", "x ∈ (-∞, 2)", "x ∈ (3, 5)"]],
+  ["Oblicz wartość funkcji odwrotnej do f(x) = 5x - 3", "f⁻¹(x) = (x + 3) / 5", ["f⁻¹(x) = (x - 3) / 5", "f⁻¹(x) = (x + 3) / 2", "f⁻¹(x) = x / 5"]],
+  ["Oblicz całkę: ∫(3x²) dx", "x³", ["3x²", "2x³", "x²"]],
+  ["Dowód: Jeśli a = b, to a² = b²", "Tak", ["Nie", "Zależy", "Tylko dla liczb całkowitych"]],
+  ["Rozwiąż równanie z parametrem: x² - 2px + q = 0, gdzie p = 3, q = 9", "x = 3, x = 3", ["x = 0, x = 6", "x = -3, x = 3", "x = 2, x = 4"]],
+  ["Oblicz pochodną funkcji f(x) = x² - 2x", "2x - 2", ["2x + 2", "x² - 2", "x - 2"]],
+  ["Oblicz pochodną funkcji f(x) = √x", "1 / 2√x", ["1 / x", "√x", "x"]],
+  ["Rozwiąż nierówność: 3x - 2 > 5", "x > 7/3", ["x < 5/3", "x > 1", "x = 7"]],
+  ["Oblicz wartość wyrażenia 7!", "5040", ["3600", "7200", "5000"]],
+  ["Oblicz granicę: lim (x→∞) (3x² - 4x + 1) / (x² + 2x)", "3", ["2", "1", "4"]],
+  ["Oblicz wartość funkcji wykładniczej: f(x) = 3^x dla x = 2", "9", ["6", "12", "27"]],
+  ["Rozwiąż układ równań: 2x + 3y = 7, x - y = 4", "x = 5, y = 1", ["x = 4, y = 2", "x = 3, y = 2", "x = 6, y = 1"]],
+  ["Rozwiąż nierówność: x² - 4x - 5 > 0", "x < -1 lub x > 5", ["x < -5 lub x > 1", "x < 0 lub x > 4", "x < -2 lub x > 3"]],
+  ["Oblicz pochodną funkcji f(x) = 4x³ - 5x²", "12x² - 10x", ["12x² - 5", "10x² - 4", "4x³ - 5"]],
+  ["Oblicz pole powierzchni bocznej stożka o promieniu 3 i wysokości 4", "36π", ["18π", "12π", "24π"]],
+  ["Oblicz granicę: lim (x→0) (x³ - 3x²) / x", "0", ["-3", "3", "1"]],
+  ["Oblicz wartość funkcji logarytmicznej log₃(27)", "3", ["2", "4", "5"]],
+  ["Oblicz pole powierzchni stożka o promieniu 6 i wysokości 8", "108π", ["80π", "90π", "100π"]],
+  ["Oblicz całkę: ∫(x³ - 4x) dx", "x⁴ / 4 - 2x²", ["x³ / 3 - 2x", "x⁴ - 4x²", "x² - 2x"]],
+  ["Rozwiąż nierówność: x² + 3x - 4 > 0", "x < -4 lub x > 1", ["x < -1 lub x > 4", "x < 2 lub x > 5", "x < -3 lub x > 2"]],
+]);
         }
     }
 }
