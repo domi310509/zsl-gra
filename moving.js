@@ -61,21 +61,21 @@ function invokeMap(mapId){
     <img src="images/mapa sali 1.png" usemap="#image-map">
 
     <map name="image-map">
-        <area alt="101" title="101" onclick="mapHandler(0)" coords="27,540,195,661" shape="rect">
-        <area alt="102a" title="102a" onclick="mapHandler(1)" coords="201,540,310,661" shape="rect">
-        <area alt="102b" title="102b" onclick="mapHandler(2)" coords="315,540,488,660" shape="rect">
-        <area alt="103" title="103" onclick="mapHandler(3)" coords="495,540,625,661" shape="rect">
-        <area alt="104" title="104" onclick="mapHandler(4)" coords="834,660,674,540" shape="rect">
-        <area alt="105" title="105" onclick="mapHandler(5)" coords="840,541,994,658" shape="rect">
-        <area alt="106" title="106" onclick="mapHandler(6)" coords="998,540,1192,658" shape="rect">
-        <area alt="107" title="107" onclick="mapHandler(7)" coords="1201,555,1327,694" shape="rect">
-        <area alt="108" title="108" onclick="mapHandler(8)" coords="1336,554,1459,695" shape="rect">
-        <area alt="109" title="109" onclick="mapHandler(9)" coords="1467,555,1553,743" shape="rect">
-        <area alt="111" title="111" onclick="mapHandler(10)" coords="1303,853,1220,747" shape="rect">
-        <area alt="stairs" title="stairs" onclick="mapHandler(11)" coords="1081,771,1002,718" shape="rect">
+        <area alt="101" title="101" onclick="mapHandler('101')" coords="27,540,195,661" shape="rect">
+        <area alt="102a" title="102a" onclick="mapHandler('102a')" coords="201,540,310,661" shape="rect">
+        <area alt="102b" title="102b" onclick="mapHandler('102b')" coords="315,540,488,660" shape="rect">
+        <area alt="103" title="103" onclick="mapHandler('103')" coords="495,540,625,661" shape="rect">
+        <area alt="104" title="104" onclick="mapHandler('104')" coords="834,660,674,540" shape="rect">
+        <area alt="105" title="105" onclick="mapHandler('105')" coords="840,541,994,658" shape="rect">
+        <area alt="106" title="106" onclick="mapHandler('106')" coords="998,540,1192,658" shape="rect">
+        <area alt="107" title="107" onclick="mapHandler('107')" coords="1201,555,1327,694" shape="rect">
+        <area alt="108" title="108" onclick="mapHandler('108')" coords="1336,554,1459,695" shape="rect">
+        <area alt="109" title="109" onclick="mapHandler('109')" coords="1467,555,1553,743" shape="rect">
+        <area alt="111" title="111" onclick="mapHandler('111')" coords="1303,853,1220,747" shape="rect">
+        <area alt="stairs" title="stairs" onclick="mapHandler('stairs1')" coords="1081,771,1002,718" shape="rect">
         <area alt="szatnia" title="szatnia" onclick="mapHandler('szatnia')" coords="633,541,667,660" shape="rect">
         <area alt="pokojnauczycielski" title="pokojnauczycielski" onclick="mapHandler('pokojnauczycielski')" coords="1312,750,1423,853" shape="rect">
-        <area alt="110a" title="110a" onclick="mapHandler(14)" coords="1426,750,1508,852" shape="rect">
+        <area alt="110a" title="110a" onclick="mapHandler('110a')" coords="1426,750,1508,852" shape="rect">
         <area alt="WC" title="WC" onclick="mapHandler('wc')" coords="999,777,1081,855" shape="rect">
     </map>`]
     document.getElementById("game_window").innerHTML = maps[mapId];
@@ -97,7 +97,13 @@ function popUp(text){
     }, 3000);
 }
 
-function mapHandler(id){
+async function startTeacherInteraction(teacherId){
+    let teacher = getTeacher(teacherId);
+    await teacher.loadDialogDOM();
+    await teacher.quiz(0);
+}
+
+async function mapHandler(id){
     if(!readyForClick) return;
     switch(id){
         case "wc": {
@@ -112,8 +118,12 @@ function mapHandler(id){
             popUp("Nie jesteś nauczycielem");
             break;
         }
-        case 0: {
-            let teacher = getTeacher(0);
+        case "stairs1": {
+            //invokeMap() menu do przemieszczania między piętrami
+            break;
+        }
+        case '101': {
+            await startTeacherInteraction(0);
             break;
         }
         default: {

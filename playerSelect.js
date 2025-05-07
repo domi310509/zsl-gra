@@ -1,7 +1,6 @@
 class playerSelect{
   loadDOM(){
     document.head.innerHTML += `<style id='playerSelectStyle'>body {
-    background-color: #8542b5;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -191,6 +190,29 @@ function startGame(){
     persons[i-1] = document.getElementById(i).options[document.getElementById(i).selectedIndex].value;
   }
   document.getElementById("playerSelectStyle").remove();
-  document.body.innerHTML = "";
+  document.body.innerHTML = `<div class="row">
+        <div class="game" id="game_window">
+        </div>
+        <div class="column">
+            <div class="stats" id="player0">
+                Statystyki
+            </div>
+            <div class="map" id="map">
+                Mapa
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="player" id="player1">
+            Gracz 1
+        </div>
+        <div class="player" id="player2">
+            Gracz 2
+        </div>
+        <div class="player" id="player3">
+            Gracz 3
+        </div>
+    </div>`;
+    invokeMap(0);
   console.log(persons)
 }

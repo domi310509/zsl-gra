@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lawngreen;
     width: 70vw;
     height: 70vh;
 }
@@ -16,7 +15,7 @@
     left: 5vw;
     width: 60vw;
     height: 30vh;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 .text{
@@ -26,7 +25,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: blue;
+    background-color: #8542b5;
 }
 
 .row{
@@ -98,7 +97,7 @@ body{
     top: 1%;
     overflow: hidden;
     font-size: calc(4vw + 4vh + 2vmin);
-    background-image: url("images/domi.png");
+    background-image: url("images/pobrane.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0 center;
