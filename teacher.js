@@ -399,5 +399,137 @@ function getTeacher(teacherName){
   ["Rozwiąż nierówność: x² + 3x - 4 > 0", "x < -4 lub x > 1", ["x < -1 lub x > 4", "x < 2 lub x > 5", "x < -3 lub x > 2"]],
 ]);
         }
+case "1_klasa_ang": {
+            return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["How do you say 'dzień dobry' in English?", "Good morning", ["Hello", "Good evening", "Good afternoon"]],
+  ["What is the opposite of 'big'?", "small", ["large", "huge", "tiny"]],
+  ["Translate: 'Jestem zmęczony.'", "I am tired", ["I am sleepy", "I am fine", "I am happy"]],
+  ["What is the plural form of 'child'?", "children", ["childs", "childes", "children's"]],
+  ["What is the past tense of 'go'?", "went", ["goes", "going", "gone"]],
+  ["Translate: 'Gdzie jest najbliższy sklep?'", "Where is the nearest shop?", ["Where is the nearest store?", "Where is the closest shop?", "Where are the nearest shops?"]],
+  ["Which word is a verb?", "run", ["book", "car", "table"]],
+  ["What is the opposite of 'happy'?", "sad", ["joyful", "angry", "excited"]],
+  ["What do we call the place where you can borrow books?", "library", ["bookstore", "museum", "park"]],
+  ["How do you say 'dziękuję' in English?", "thank you", ["please", "sorry", "goodbye"]],
+  ["What is the past tense of 'eat'?", "ate", ["eats", "eaten", "eating"]],
+  ["Translate: 'Lubię podróże.'", "I like travelling", ["I like trips", "I like to travel", "I like journey"]],
+  ["Which of these is a question word?", "where", ["fast", "book", "quickly"]],
+  ["How do you say 'kiedy?' in English?", "when", ["where", "why", "who"]],
+  ["What is the opposite of 'short'?", "long", ["tall", "high", "wide"]],
+  ["How do you say 'dzień' in English?", "day", ["night", "morning", "evening"]],
+  ["What is the comparative form of 'good'?", "better", ["best", "more good", "well"]],
+  ["What is the opposite of 'old'?", "young", ["new", "young", "fresh"]],
+  ["Translate: 'Czy możesz mi pomóc?'", "Can you help me?", ["Can you assist me?", "Could you help me?", "Do you help me?"]],
+  ["What is the future form of 'I am'?","I will be", ["I am being", "I will being", "I be"]],
+  ["Which word is an adjective?", "beautiful", ["quick", "quickly", "run"]],
+  ["What do you call the device you use to talk to people far away?", "phone", ["laptop", "television", "radio"]]
+]);
+        }
+case "2_klasa_ang": {
+            return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["What is the past tense of 'run'?", "ran", ["runned", "runed", "ran"]],
+  ["Translate: 'Ona ma dwa koty.'", "She has two cats", ["She have two cats", "She has cat two", "She have two cat"]],
+  ["Which of these is a preposition?", "on", ["quick", "tall", "happy"]],
+  ["What does 'busy' mean?", "occupied", ["tired", "happy", "sad"]],
+  ["How do you say 'na pewno' in English?", "for sure", ["maybe", "probably", "definitely"]],
+  ["Translate: 'Będę w pracy o 9.'", "I will be at work at 9", ["I will be at work on 9", "I will work at 9", "I will work in 9"]],
+  ["What is the opposite of 'dark'?", "light", ["bright", "clear", "white"]],
+  ["What is the plural of 'city'?", "cities", ["citys", "citieses", "citi"]],
+  ["What does 'exciting' mean?", "thrilling", ["boring", "sad", "happy"]],
+  ["Translate: 'Czy masz czas?'","Do you have time?", ["Have you time?", "You have time?", "Do have time?"]],
+  ["What is the present tense of 'be' for 'they'?", "are", ["am", "is", "be"]],
+  ["How do you say 'po angielsku'?", "in English", ["by English", "on English", "with English"]],
+  ["Which sentence is correct?", "She is reading a book", ["She reading a book", "She reads a book", "She book reading"]],
+  ["What is the opposite of 'strong'?", "weak", ["weakly", "stronger", "strength"]],
+  ["Translate: 'Zawsze jeżdżę do szkoły autobusem.'", "I always go to school by bus", ["I always go to school in bus", "I always go school by bus", "Always I go to school by bus"]],
+  ["What is the comparative form of 'bad'?", "worse", ["worst", "more bad", "badder"]],
+  ["What is the past tense of 'drink'?", "drank", ["drunk", "drinks", "drinking"]],
+  ["Which is correct?", "She plays the piano", ["She play piano", "She played the piano", "She is playing piano"]],
+  ["What does 'expensive' mean?", "costing a lot", ["cheap", "free", "valuable"]],
+  ["Translate: 'Gdzie jest łazienka?'", "Where is the bathroom?", ["Where is toilet?", "Where bathroom is?", "Where's bathroom?"]],
+  ["Which of these is an adverb?", "quickly", ["quick", "quickness", "quicker"]],
+  ["How do you say 'bardzo dziękuję' in English?", "Thank you very much", ["Thank very you much", "Thank you so much", "Much thank you"]]
+]);
+        }
+case "3_klasa_ang": {
+        return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["What is the past tense of 'write'?", "wrote", ["written", "writing", "wrote"]],
+  ["Translate: 'Mamy dużą kuchnię.'", "We have a big kitchen", ["We has a big kitchen", "We have big kitchen", "We has big kitchen"]],
+  ["Which sentence is correct?", "I don't like fish", ["I doesn't like fish", "I like don't fish", "I like no fish"]],
+  ["What is the opposite of 'cheap'?", "expensive", ["affordable", "costly", "luxurious"]],
+  ["Translate: 'Chciałbym kawę.'", "I would like coffee", ["I want coffee", "I like coffee", "I would like a coffee"]],
+  ["What is the plural of 'man'?", "men", ["mans", "men's", "man"]],
+  ["What is the correct word to fill the gap: 'She _____ to the gym every day.'", "goes", ["going", "go", "gone"]],
+  ["What is the superlative form of 'good'?", "best", ["better", "goodest", "well"]],
+  ["Which word is a conjunction?", "and", ["but", "beautiful", "quickly"]],
+  ["What is the correct form of 'be' for 'he' in the present tense?", "is", ["am", "are", "be"]],
+  ["Translate: 'Chciałbym ci pomóc.'", "I would like to help you", ["I like to help you", "I want help you", "I would help you"]],
+  ["What is the past tense of 'sing'?", "sang", ["sung", "singed", "sang"]],
+  ["Translate: 'To jest moje ulubione miejsce.'", "This is my favourite place", ["This my favourite place is", "My favourite is this place", "This favourite place is my"]],
+  ["What is the opposite of 'wet'?", "dry", ["drier", "wetter", "dryest"]],
+  ["How do you say 'moje imię to...'?", "My name is...", ["I name is...", "My name...", "Name is my..."]],
+  ["Translate: 'Mam 20 lat.'", "I am 20 years old", ["I have 20 years", "I am 20 years", "20 years I am"]],
+  ["Which word is a noun?", "car", ["run", "quickly", "beautiful"]],
+  ["How do you say 'jestem głodny'?", "I am hungry", ["I hungry", "I be hungry", "Hungry I am"]],
+  ["What is the correct order of the words: 'the / movie / exciting / was / really'?", "The movie was really exciting", ["The really exciting movie was", "Exciting movie was the really", "The was really movie exciting"]],
+  ["Translate: 'Będę czekać na ciebie.'", "I will wait for you", ["I will be waiting for you", "I wait for you", "I will be wait for you"]],
+  ["Which sentence is correct?", "She is reading a book", ["She read book", "She reads a book", "She reading book"]],
+  ["What is the opposite of 'rich'?", "poor", ["wealthy", "poorly", "moneyless"]]
+]);
+
+        }
+case "4_klasa_ang": {
+          return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["What is the plural of 'child'?", "children", ["childs", "children's", "childes"]],
+  ["Translate: 'On ma psa.'", "He has a dog", ["He have a dog", "He has dogs", "He has a doggy"]],
+  ["Which of these is an adjective?", "happy", ["joy", "happiness", "happily"]],
+  ["How do you say 'skąd pochodzisz?' in English?", "Where are you from?", ["Where from you are?", "Are you from where?", "Where you are from?"]],
+  ["Translate: 'Gdzie jest najbliższy sklep?'", "Where is the nearest shop?", ["Where nearest shop is?", "Where is nearest shop?", "Where nearest is shop?"]],
+  ["What is the past tense of 'see'?", "saw", ["seen", "sawing", "sawed"]],
+  ["Translate: 'Jestem zmęczony.'", "I am tired", ["I tired", "I am sleepy", "I am tiredly"]],
+  ["What does 'kind' mean?", "helpful", ["unfriendly", "angry", "sad"]],
+  ["How do you say 'nie wiem' in English?", "I don't know", ["I not know", "I know not", "Not know I"]],
+  ["What is the plural of 'fox'?", "foxes", ["foxs", "foxes'", "foxes"]],
+  ["Translate: 'Jestem z Polski.'", "I am from Poland", ["I from Poland am", "From Poland I am", "Poland I am from"]],
+  ["What is the comparative form of 'bad'?", "worse", ["badder", "worser", "worst"]],
+  ["What is the past tense of 'take'?", "took", ["taken", "take", "tooked"]],
+  ["Translate: 'Mam na imię Anna.'", "My name is Anna", ["My Anna name is", "Anna is my name", "My name Anna is"]],
+  ["What is the superlative form of 'fast'?", "fastest", ["faster", "fast", "fastest"]],
+  ["What is the opposite of 'new'?", "old", ["newest", "younger", "modern"]],
+  ["What is the past tense of 'go'?", "went", ["goes", "going", "gone"]],
+  ["Which word is a preposition?", "under", ["quick", "tall", "fast"]],
+  ["How do you say 'szkoła' in English?", "school", ["book", "class", "teacher"]],
+  ["Translate: 'Czy możesz mi pomóc?'", "Can you help me?", ["Can help you me?", "You help can me?", "You can help me?"]],
+  ["What is the opposite of 'tall'?", "short", ["small", "big", "wide"]],
+  ["How do you say 'gdzie mieszkasz?' in English?", "Where do you live?", ["Where are you live?", "Where you live?", "Where live you?"]]
+]);
+
+        }
+case "5_klasa_ang": {
+          return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["What is the past tense of 'begin'?", "began", ["begined", "began", "beganed"]],
+  ["Translate: 'Dziś jest piękna pogoda.'", "The weather is beautiful today", ["Today weather is beautiful", "Beautiful is the weather today", "Today is beautiful weather"]],
+  ["How do you say 'na pewno' in English?", "for sure", ["maybe", "probably", "certainly"]],
+  ["Which is the correct sentence?", "She is studying English", ["She studies English", "She studying English", "She study English"]],
+  ["What is the plural of 'foot'?", "feet", ["foots", "feet's", "footes"]],
+  ["Translate: 'On ma 30 lat.'", "He is 30 years old", ["He has 30 years old", "He 30 years is old", "He is old 30 years"]],
+  ["What is the opposite of 'strong'?", "weak", ["weakly", "strength", "strengthened"]],
+  ["Translate: 'Lubię oglądać filmy.'", "I like watching movies", ["I like watch movies", "I like to watch movie", "I watch movies like"]],
+  ["Which of these is a verb?", "jump", ["book", "dog", "quickly"]],
+  ["What does 'brave' mean?", "courageous", ["timid", "scared", "fearful"]],
+  ["How do you say 'mam nadzieję, że' in English?", "I hope that", ["I hope", "I hope to", "I hope so"]],
+  ["What is the past tense of 'catch'?", "caught", ["catchen", "caught", "catches"]],
+  ["Translate: 'Jestem bardzo szczęśliwy.'", "I am very happy", ["I very happy am", "I am happy very", "Happy I am very"]],
+  ["What is the opposite of 'slow'?", "fast", ["quick", "speedy", "swift"]],
+  ["How do you say 'to jest moje marzenie' in English?", "This is my dream", ["This my dream is", "This dream is mine", "My dream is this"]],
+  ["What is the superlative form of 'high'?", "highest", ["higher", "high", "highest"]],
+  ["Which sentence is correct?", "They are playing football", ["They playing football", "They play football", "They football play"]],
+  ["What does 'silent' mean?", "quiet", ["noisy", "loud", "buzzy"]],
+  ["Translate: 'To było bardzo trudne.'", "That was very difficult", ["That very was difficult", "That was difficult very", "It was very hard"]],
+  ["What is the opposite of 'happy'?", "sad", ["joyful", "content", "excited"]],
+  ["Which word is a conjunction?", "but", ["and", "run", "quickly"]],
+  ["Translate: 'Będę czekać na ciebie.'", "I will wait for you", ["I wait for you", "I will wait you", "I will be waiting for you"]]
+]);
+        }
     }
 }
