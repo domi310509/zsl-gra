@@ -94,6 +94,15 @@ button:hover {
     border-radius: 8px;
     font-size: 16px;
 }
+.character-slot input[type="text"] {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #a650f6;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 120px;
+    color: #333;
+}
 
 button#addCharacter{
     background-color: #a650f6;
@@ -128,45 +137,45 @@ button#startGame{
 
     <div id="character-select"></div>`
     document.getElementById('character-select').innerHTML = `<h2>Wybierz postacie</h2>
-        <div id="character-container">
-          <div class="character-slot">
-            <label>Gracz 1:</label>
-            <select id='1'>
-              <option>Programista</option>
-              <option>Informatyk</option>
-              <option>Robotyk</option>
-              <option>Fotograf</option>
-            </select>
-          </div>
-          <div class="character-slot">
-            <label>Gracz 2:</label>
-            <select id='2'>
-              <option>Programista</option>
-              <option>Informatyk</option>
-              <option>Robotyk</option>
-              <option>Fotograf</option>
-            </select>
-          </div>
-          <div class="character-slot">
-            <label>Gracz 3:</label>
-            <select id='3'>
-              <option>Programista</option>
-              <option>Informatyk</option>
-              <option>Robotyk</option>
-              <option>Fotograf</option>
-            </select>
-          </div>
-          <div class="character-slot">
-            <label>Gracz 4:</label>
-            <select id='4'>
-              <option>Programista</option>
-              <option>Informatyk</option>
-              <option>Robotyk</option>
-              <option>Fotograf</option>
-            </select>
-          </div>
+ <div id="character-container">
+        <div class="character-slot">
+          <input type="text" placeholder="Gracz 1" />
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
         </div>
-        <button id="startGame" onclick="startGame()">Start</button>`;
+        <div class="character-slot">
+          <input type="text" placeholder="Gracz 2" />
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+        <div class="character-slot">
+          <input type="text" placeholder="Gracz 3" />
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+        <div class="character-slot">
+          <input type="text" placeholder="Gracz 4" />
+          <select>
+            <option>Programista</option>
+            <option>Informatyk</option>
+            <option>Robotyk</option>
+            <option>Fotograf</option>
+          </select>
+        </div>
+      </div>
+      <button id="startGame" onclick="startGame()">Start</button>`;
     document.getElementById('creators-modal').innerHTML = `      <div class="modal-content">
           <h2>Twórcy gry</h2>
           <ul>
