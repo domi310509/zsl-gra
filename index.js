@@ -28,6 +28,6 @@ map.addArrows();
 updateStats(players);
 */
 
-let players = [new player("abc", 0), new player("def", 0), new player("ghi", 0), new player("jkl", 0)];
-currentPlayer = 0;
-invokeMap(0);
+// let players = [new player("abc", 0), new player("def", 0), new player("ghi", 0), new player("jkl", 0)];
+// currentPlayer = 0;
+// invokeMap(0);

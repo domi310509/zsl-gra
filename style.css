@@ -98,7 +98,7 @@ body{
     top: 1%;
     overflow: hidden;
     font-size: calc(4vw + 4vh + 2vmin);
-    background-image: url("domi.png");
+    background-image: url("images/domi.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0 center;
@@ -127,7 +127,7 @@ body{
 }
 
 .arrow{
-    background-image: url("strzalka.png");
+    background-image: url("images/strzalka.png");
     background-size: 190px 190px;
     background-position: center;
     width: 96px;

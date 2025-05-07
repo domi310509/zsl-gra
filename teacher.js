@@ -94,13 +94,13 @@ function shuffle(array) { // great shuffle algorithm (not mine)
 function getTeacher(teacherName){
     switch (teacherName){
         case "debug": {
-            return new teacher("Imie nauczyciela", "./pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
+            return new teacher("Imie nauczyciela", "images/pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
                 ["Czy ten kod jest super?", "Tak", ["Nie", "Może", "Niezbyt"]], // question, correct answer, [wrong answers]
                 ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]]
             ]);
         }
         case 0: {
-            return new teacher("Śmieć", "./pobrane.jpg", [0, 0], 2, [
+            return new teacher("Śmieć", "images/pobrane.jpg", [0, 0], 2, [
                 ["Poprawna odpowiedź to 12", "12", ["11", "10", "2"]],
                 ["Poprawna odpowiedź to 23", "23", ["22", "12", "43"]]
             ])
