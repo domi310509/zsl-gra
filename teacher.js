@@ -6,7 +6,7 @@ class teacher{
         this.numberOfQuestions = numberOfQuestions;
         this.questions = questions;
         this.currentQuestion = 0;
-        this.avg;
+        this.sum = 0;
     }
 
     async loadDialogDOM(){
@@ -58,9 +58,10 @@ class teacher{
 
     async quizHandler(i){
         if(i == this.currentCorrectAnswer+1){
-            console.log("Dobra odpowiedź!!!! (", i, ")")
+            console.log("Dobra odpowiedź!!!! (", i, ")");
+            sum++;
         }else{
-            console.log("Zła odpowiedź (", i, ")")
+            console.log("Zła odpowiedź (", i, ")");
         }
         this.currentQuestion++;
         if(this.currentQuestion < this.numberOfQuestions){
@@ -72,10 +73,9 @@ class teacher{
 
     async quizDone(){
         console.log("done");
-        let chatBox = document.getElementById("question").innerHTML = "Brawo. Zdałeś test";
-        let responseBox = document.getElementById("dialog_responses")
-
-        console.log("Poprawna odpowiedź: ", this.currentCorrectAnswer+1);
+        document.getElementById("question").innerHTML = `Brawo. Zdałeś test na ${this.sum/this.numberOfQuestions}`;
+        document.querySelector(".dialog_responses").innerHTML = "";
+        await delay(2000);
         document.getElementsByClassName("dialog")[0].remove();
     }
 }
