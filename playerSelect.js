@@ -185,9 +185,8 @@ button#startGame{
 }
 
 function startGame(){
-  let persons = []
   for(let i = 1; i<5; i++){
-    persons[i-1] = document.getElementById(i).options[document.getElementById(i).selectedIndex].value;
+    players[i-1] = new player(`gracz${i}`, document.getElementById(i).options[document.getElementById(i).selectedIndex].value, 0); ///////////////////////////////////////////////////////// Tu to też dodaj Wojtek
   }
   document.getElementById("playerSelectStyle").remove();
   document.body.innerHTML = `<div class="row">
@@ -213,6 +212,7 @@ function startGame(){
             Gracz 3
         </div>
     </div>`;
-    invokeMap(0);
-  console.log(persons)
+  invokeMap(0);
+  showPlayers();
+  console.log(players)
 }

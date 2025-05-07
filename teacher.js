@@ -1,6 +1,7 @@
 class teacher{
-    constructor(teacherName, teacherImageName, imagePosition, numberOfQuestions, questions){
+    constructor(teacherName, quizId, teacherImageName, imagePosition, numberOfQuestions, questions){
         this.teacherName = teacherName;
+        this.quizId = quizId;
         this.teacherImageName = teacherImageName;
         this.imagePosition = imagePosition;
         this.numberOfQuestions = numberOfQuestions;
@@ -58,10 +59,10 @@ class teacher{
 
     async quizHandler(i){
         if(i == this.currentCorrectAnswer+1){
-            console.log("Dobra odpowiedź!!!! (", i, ")");
-            sum++;
+            console.log(`Dobra odpowiedź!!!! (${i})`);
+            this.sum++;
         }else{
-            console.log("Zła odpowiedź (", i, ")");
+            console.log(`Zła odpowiedź (${i})`);
         }
         this.currentQuestion++;
         if(this.currentQuestion < this.numberOfQuestions){
@@ -73,7 +74,9 @@ class teacher{
 
     async quizDone(){
         console.log("done");
-        document.getElementById("question").innerHTML = `Brawo. Zdałeś test na ${this.sum/this.numberOfQuestions}`;
+        let avg = this.sum/this.numberOfQuestions*100;
+        currentPlayer().quizesDone[this.quizId] = avg;
+        document.getElementById("question").innerHTML = `Brawo. Zdałeś test na ${avg}%`;
         document.querySelector(".dialog_responses").innerHTML = "";
         await delay(2000);
         document.getElementsByClassName("dialog")[0].remove();
@@ -101,13 +104,13 @@ function shuffle(array) { // great shuffle algorithm (not mine)
 function getTeacher(teacherName){
     switch (teacherName){
         case "debug": {
-            return new teacher("Imie nauczyciela", "images/pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
+            return new teacher("Imie nauczyciela", 1, "images/pobrane.jpg", [0, 0], 2, [ // name, image file name, pixel position, number of questions
                 ["Czy ten kod jest super?", "Tak", ["Nie", "Może", "Niezbyt"]], // question, correct answer, [wrong answers]
                 ["Czy ten kod nie jest super?", "Nie",  ["Tak", "Może", "Niezbyt"]]
             ]);
         }
         case 0: {
-            return new teacher("Śmieć", "images/pobrane.jpg", [0, 0], 2, [
+            return new teacher("Śmieć", 1, "images/pobrane.jpg", [0, 0], 2, [
                 ["Poprawna odpowiedź to 12", "12", ["11", "10", "2"]],
                 ["Poprawna odpowiedź to 23", "23", ["22", "12", "43"]]
             ])
