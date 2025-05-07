@@ -531,5 +531,137 @@ case "5_klasa_ang": {
   ["Translate: 'Będę czekać na ciebie.'", "I will wait for you", ["I wait for you", "I will wait you", "I will be waiting for you"]]
 ]);
         }
+case "1_klasa_pol": {
+            return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Kto napisał „Pana Tadeusza”?", "Adam Mickiewicz", ["Juliusz Słowacki", "Zygmunt Krasiński", "Bolesław Prus"]],
+  ["Co to jest liryka?", "Rodzaj literacki", ["Epika", "Dramat", "Proza"]],
+  ["Jakie cechy ma bohater romantyczny?", "Poczucie buntu, indywidualizm", ["Moralność, porządek", "Zgodność z tradycją", "Skrucha, pokora"]],
+  ["Która z postaci jest bohaterem „Pana Tadeusza”?", "Tadeusz Soplica", ["Jacek Soplica", "Stolnik", "Mickiewicz"]],
+  ["Czym charakteryzuje się ballada?", "Krótka forma liryczno-epicka", ["Epos", "Powieść", "Tragedia"]],
+  ["W którym roku powstał „Pan Tadeusz”?", "1834", ["1822", "1842", "1830"]],
+  ["Co to jest metafora?", "Zamiana znaczeń słów", ["Porównanie", "Symbol", "Ironia"]],
+  ["Kto napisał „Zbrodnię i karę”?", "Fiodor Dostojewski", ["Leo Tolstoj", "Charles Dickens", "Ernest Hemingway"]],
+  ["Kiedy powstała literatura średniowieczna?", "V-XV w.", ["XVI-XVIII w.", "XIX-XX w.", "IV-VI w."]],
+  ["Czym jest sonet?", "Forma wiersza o 14 wersach", ["Epopeja", "Poezja", "Proza"]],
+  ["Co to jest przenośnia?", "Zastosowanie wyrazu w innym niż dosłowne znaczeniu", ["Porównanie", "Epitet", "Aliteracja"]],
+  ["Kto był autorem „Lalki”?", "Bolesław Prus", ["Henryk Sienkiewicz", "Marek Twaina", "Władysław Reymont"]],
+  ["Jakie cechy posiada bohater klasyczny?", "Harmonia, równowaga", ["Bunt, indywidualizm", "Odwaga, brawura", "Złośliwość, egoizm"]],
+  ["Co to jest alegoria?", "Ukryte znaczenie symboliczne", ["Metafora", "Porównanie", "Symbol"]],
+  ["Gdzie rozgrywa się akcja „Pana Tadeusza”?", "Na Litwie", ["W Polsce", "W Czechach", "Na Ukrainie"]],
+  ["Co oznacza pojęcie „eksponowanie” w literaturze?", "Podkreślenie ważności elementu", ["Ukrycie wątku", "Przedstawienie z drugiego planu", "Zamaskowanie tematu"]],
+  ["W jakim okresie powstał romantyzm?", "XIX w.", ["XVII w.", "XVIII w.", "XVI w."]],
+  ["Czym jest metonimia?", "Zastąpienie wyrazu innym o podobnym znaczeniu", ["Synonim", "Antyteza", "Aluzja"]],
+  ["Co to jest antyteza?", "Zestawienie przeciwstawnych pojęć", ["Metafora", "Parabola", "Porównanie"]],
+  ["Która z postaci jest bohaterem „Zbrodni i kary”?", "Rodion Raskolnikow", ["Dmitrij Karamazow", "Wojciech Sienkiewicz", "Andriej Karamazow"]],
+  ["Co to jest eufemizm?", "Złagodzenie wyrazu", ["Wykrzyknienie", "Pytanie retoryczne", "Skróty"]],
+  ["Jaki jest temat „Dziadów” cz. II?", "Śmierć i życie po śmierci", ["Miłość", "Bunt społeczny", "Przemiany historyczne"]]
+]);
+        }
+case "2_klasa_pol": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Kto napisał „Chłopów”?", "Władysław Reymont", ["Bolesław Prus", "Maria Konopnicka", "Józef Ignacy Kraszewski"]],
+  ["Co to jest epika?", "Rodzaj literacki przedstawiający wydarzenia", ["Dramat", "Liryka", "Epos"]],
+  ["Co to jest nowelistyka?", "Pisanie krótkich powieści", ["Opowiadanie", "Powieść", "Szkic"]],
+  ["Co oznacza pojęcie „groteska”?", "Przesadny, karykaturalny sposób przedstawienia", ["Tragedia", "Dramat", "Tragikomedia"]],
+  ["Kto napisał „Sklepy cynamonowe”?", "Bruno Schulz", ["Jerzy Andrzejewski", "Tadeusz Różewicz", "Stefan Żeromski"]],
+  ["Kto napisał „Ferdydurke”?", "Witold Gombrowicz", ["Andrzej Stasiuk", "Jerzy Pilch", "Kazimierz Brandys"]],
+  ["Kto jest autorem „Wesela”?", "Stanisław Wyspiański", ["Juliusz Słowacki", "Adam Mickiewicz", "Zygmunt Krasiński"]],
+  ["Czym jest parodia?", "Naśladownictwo w celu wyśmiania", ["Ironia", "Aluzja", "Analogia"]],
+  ["Jakie cechy ma literatura baroku?", "Dążenie do przepychu, kontrast", ["Skrótowość, surowość", "Sielankowość, harmonia", "Przeciętność, prostota"]],
+  ["W którym okresie powstał romantyzm?", "XIX w.", ["XVII w.", "XVI w.", "XVIII w."]],
+  ["Kto napisał „Pan Tadeusz”?", "Adam Mickiewicz", ["Henryk Sienkiewicz", "Bolesław Prus", "Juliusz Słowacki"]],
+  ["Co to jest apostrofa?", "Zwrócenie się do nieobecnej osoby lub przedmiotu", ["Porównanie", "Metafora", "Rym"]],
+  ["Co to jest personifikacja?", "Nadanie cech ludzkich rzeczom martwym", ["Aliteracja", "Anagram", "Wykrzyknienie"]],
+  ["Co to jest oksymoron?", "Zestawienie dwóch sprzecznych pojęć", ["Hiperbola", "Litota", "Przenośnia"]],
+  ["Co to jest hiperbola?", "Przesadne wyolbrzymienie", ["Przeciwieństwo", "Przesada", "Uproszczenie"]],
+  ["Co to jest retrospekcja?", "Powrócenie do wcześniejszych wydarzeń", ["Klimaks", "Skrócenie", "Opis postaci"]],
+  ["W którym okresie powstała literatura romantyzmu?", "XIX w.", ["XVII w.", "XVI w.", "XVIII w."]],
+  ["Co to jest symbol?", "Znaczenie ukryte w tekście", ["Porównanie", "Opis", "Przenośnia"]],
+  ["Kto napisał „Śluby panieńskie”?", "Aleksander Fredro", ["Juliusz Słowacki", "Zygmunt Krasiński", "Adam Mickiewicz"]],
+  ["Co to jest monolog?", "Wypowiedź jednej osoby", ["Dialog", "Scena", "Opis"]],
+  ["Co to jest wiersz biały?", "Wiersz bez rymów", ["Wiersz zwrotkowy", "Wiersz regularny", "Wiersz wolny"]],
+  ["Co to jest onomatopeja?", "Wyraz dźwiękonaśladowczy", ["Synonim", "Antyteza", "Alegoria"]],
+]);
+
+case "3_klasa_pol": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Kto napisał „Zbrodnię i karę”?", "Fiodor Dostojewski", ["Bolesław Prus", "Maria Dąbrowska", "Marek Hłasko"]],
+  ["Co to jest narracja?", "Sposób przedstawienia wydarzeń w tekście", ["Opis", "Dialog", "Monolog"]],
+  ["Co to jest wiersz liryczny?", "Wiersz wyrażający uczucia autora", ["Epos", "Powieść", "Drama"]],
+  ["Kto napisał „Mistrza i Małgorzatę”?", "Michał Bułhakow", ["Władysław Reymont", "Witold Gombrowicz", "Bolesław Prus"]],
+  ["Czym jest esej?", "Forma wypowiedzi literackiej o charakterze rozważań", ["Powieść", "Szkic", "Opowiadanie"]],
+  ["Co to jest antologia?", "Zbiór utworów literackich", ["Powieść", "Esencja", "Słownik"]],
+  ["Co to jest tragedia?", "Dramat o tematyce tragicznej", ["Komedia", "Monodram", "Epos"]],
+  ["W jakiej epoce powstała „Iliada”?", "Starożytność", ["Renesans", "Barok", "Romantyzm"]],
+  ["Kto jest autorem „Wielkiego Gatsby'ego”?", "F. Scott Fitzgerald", ["Hemingway", "John Steinbeck", "George Orwell"]],
+  ["Co to jest liryka?", "Rodzaj literacki wyrażający uczucia autora", ["Epika", "Proza", "Dramat"]],
+  ["Co to jest postać tragiczna?", "Bohater, który nie unika tragedii", ["Bohater komiczny", "Bohater romantyczny", "Bohater epicki"]],
+  ["Co to jest ideał?", "Wzór doskonałości", ["Fikcja", "Przeciwieństwo", "Symbol"]],
+  ["Co to jest anafora?", "Powtarzanie słów na początku wersów", ["Metafora", "Porównanie", "Rym"]],
+  ["Co to jest personifikacja?", "Nadanie cech ludzkich rzeczom martwym", ["Aliteracja", "Anagram", "Wykrzyknienie"]],
+  ["Co to jest oksymoron?", "Zestawienie dwóch sprzecznych pojęć", ["Hiperbola", "Litota", "Przenośnia"]],
+  ["Co to jest retrospekcja?", "Powrócenie do wcześniejszych wydarzeń", ["Klimaks", "Skrócenie", "Opis postaci"]],
+  ["W którym okresie powstała literatura romantyzmu?", "XIX w.", ["XVII w.", "XVI w.", "XVIII w."]],
+  ["Co to jest symbol?", "Znaczenie ukryte w tekście", ["Porównanie", "Opis", "Przenośnia"]],
+  ["Kto napisał „Cierpień młodego Wertera”?", "Johann Wolfgang von Goethe", ["Bolesław Prus", "Stefan Żeromski", "Adam Mickiewicz"]],
+  ["Co to jest analiza literacka?", "Dokładne badanie tekstu pod względem struktury", ["Interpretacja", "Wspomnienie", "Komentarz"]],
+  ["Czym jest ekspozycja w dramacie?", "Wstępne przedstawienie sytuacji i postaci", ["Klimaks", "Finał", "Zakończenie"]],
+  ["Co to jest impresjonizm?", "Styl artystyczny skupiający się na wrażeniu", ["Realizm", "Barok", "Romantyzm"]]
+]);
+        }
+case "4_klasa_pol": {
+            return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Co to jest synonim?", "Wyraz o podobnym znaczeniu", ["Antyteza", "Przeciwieństwo", "Hiperbola"]],
+  ["Kto napisał „Krzyżaków”?", "Henryk Sienkiewicz", ["Zygmunt Krasiński", "Adam Mickiewicz", "Bolesław Prus"]],
+  ["Co to jest alegoria?", "Przedstawienie pojęć przez obrazy", ["Metafora", "Symbole", "Porównanie"]],
+  ["W jakiej epoce powstała „Antygona”?", "Starożytność", ["Renesans", "Romantyzm", "Barok"]],
+  ["Co to jest język potoczny?", "Język codzienny, nieformalny", ["Język literacki", "Język naukowy", "Język urzędowy"]],
+  ["Co to jest metafora?", "Przenośnia, wyraz w innym znaczeniu", ["Alegoria", "Porównanie", "Synonim"]],
+  ["Co to jest aliteracja?", "Powtarzanie tych samych dźwięków", ["Anafora", "Rym", "Onomatopeja"]],
+  ["Co to jest narracja?", "Sposób przedstawienia wydarzeń w tekście", ["Opis", "Dialog", "Monolog"]],
+  ["Co to jest anafora?", "Powtarzanie słów na początku wersów", ["Hiperbola", "Porównanie", "Rym"]],
+  ["Co to jest sonet?", "Forma wiersza o 14 wersach", ["Epopeja", "Liryka", "Powieść"]],
+  ["Co to jest wiersz wolny?", "Wiersz bez ustalonej liczby sylab i rymów", ["Wiersz regularny", "Sonet", "Ballada"]],
+  ["Co to jest eufemizm?", "Łagodzenie znaczenia słowa", ["Synonim", "Alegoria", "Antyteza"]],
+  ["Co to jest epifora?", "Powtarzanie słów na końcu wersów", ["Metafora", "Aliteracja", "Anafora"]],
+  ["Kto napisał „Lalkę”?", "Bolesław Prus", ["Henryk Sienkiewicz", "Józef Ignacy Kraszewski", "Maria Konopnicka"]],
+  ["Co to jest okolicznik?", "Część mowy określająca okoliczności akcji", ["Przydawka", "Orzeczenie", "Podmiot"]],
+  ["Co to jest wykrzyknienie?", "Wyraz wyrażający emocje", ["Pytanie", "Czasownik", "Rzeczownik"]],
+  ["Kto jest autorem „Dziadów”?", "Adam Mickiewicz", ["Juliusz Słowacki", "Stanisław Wyspiański", "Zygmunt Krasiński"]],
+  ["Co to jest realizm?", "Styl literacki wiernie przedstawiający rzeczywistość", ["Romantyzm", "Impresjonizm", "Symbolizm"]],
+  ["Co to jest parabol?", "Opowieść z morałem", ["Ballada", "Sonet", "Epos"]],
+  ["Kto napisał „Opowiadania”?", "Anton Czechow", ["Bolesław Prus", "Fiodor Dostojewski", "Ernest Hemingway"]],
+  ["Co to jest romantyzm?", "Epoka literacka z charakterystycznym indywidualizmem", ["Barok", "Realizm", "Renesans"]],
+  ["Co to jest wiersz biały?", "Wiersz bez rymów", ["Wiersz wolny", "Sonet", "Elegia"]]
+]);
+
+
+        }
+case "5_klasa_pol": {
+           return new teacher("---", "./pobrane.jpg", [0, 0], 21, [
+  ["Co to jest poezja?", "Literatura wierszowana wyrażająca uczucia", ["Proza", "Epika", "Dramat"]],
+  ["Kto napisał „Iliadę”?", "Homer", ["Wergiliusz", "Horacy", "Sofokles"]],
+  ["Co to jest epoka?", "Okres w historii literatury", ["Postać", "Gatunek", "Styl"]],
+  ["Co to jest analiza literacka?", "Dokładne badanie tekstu literackiego", ["Interpretacja", "Krytyka", "Ocena"]],
+  ["Kto napisał „Boską komedię”?", "Dante Alighieri", ["Homer", "William Shakespeare", "Johann Wolfgang von Goethe"]],
+  ["Co to jest dygresja?", "Wtrącenie do głównego wątku", ["Alegoria", "Personifikacja", "Opis"]],
+  ["Co to jest historia?", "Opis przeszłości ludzi i wydarzeń", ["Nowela", "Opowiadanie", "Powieść"]],
+  ["Kto napisał „Romeo i Julię”?", "William Shakespeare", ["Henrik Ibsen", "Friedrich Schiller", "Eugène Ionesco"]],
+  ["Co to jest dramat?", "Rodzaj literacki z dialogami", ["Powieść", "Liryka", "Proza"]],
+  ["Co to jest ekspozycja w dramacie?", "Przedstawienie sytuacji początkowej", ["Klimaks", "Finał", "Zakończenie"]],
+  ["Co to jest anegdota?", "Krótka, zabawna opowieść", ["Opowiadanie", "Opis", "Rozprawka"]],
+  ["Co to jest peryfraza?", "Określenie zastępujące nazwę", ["Metafora", "Alegoria", "Porównanie"]],
+  ["Co to jest kontekst?", "Sytuacja, w jakiej umieszczony jest tekst", ["Treść", "Forma", "Fabuła"]],
+  ["Co to jest romantyzm?", "Epoka charakteryzująca się indywidualizmem", ["Barok", "Renesans", "Oświecenie"]],
+  ["Co to jest drama?", "Utór literacki pisany w dialogach", ["Proza", "Powieść", "Epos"]],
+  ["Co to jest komedia?", "Dramat o tematyce humorystycznej", ["Tragedia", "Monodram", "Opera"]],
+  ["Co to jest ironia?", "Odmienne znaczenie słów", ["Alegoria", "Porównanie", "Przenośnia"]],
+  ["Co to jest puenta?", "Zaskakujące zakończenie utworu", ["Wstęp", "Klimaks", "Rozwinięcie"]],
+  ["Co to jest biblizmy?", "Elementy języka biblijnego", ["Alegorie", "Aliteracje", "Przenośnie"]],
+  ["Co to jest komizm?", "Śmieszność w sztuce", ["Tragizm", "Epika", "Aluzja"]],
+  ["Co to jest patos?", "Wzniosłość, podniosłość w wyrazie", ["Karykatura", "Realizm", "Skróty"]],
+  ["Co to jest elegia?", "Wiersz o smutnym, żałobnym charakterze", ["Ballada", "Sonet", "Hymn"]]
+]);
+        }
     }
 }
