@@ -1,3 +1,34 @@
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lawngreen;
+    width: 70vw;
+    height: 70vh;
+}
+
+.popup{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    background-color: pink;
+    top: 5vh;
+    left: 5vw;
+    width: 60vw;
+    height: 30vh;
+    font-size: 100px;
+}
+
+.text{
+    transform: translate(-50%, -50%);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -6,15 +37,6 @@
 .column{
     display: flex;
     flex-direction: column;
-}
-
-.game{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    width: 70vw;
-    height: 70vh;
 }
 
 .stats{
@@ -46,9 +68,87 @@
     width: 33vw;
     height: 23vh;
     margin-top: 5vh;
+    margin-bottom: 0px;
     margin-left: 5vh;
 }
 
 .player:first-of-type{
     margin-left: 0vh;
+}
+
+.quiz_section{
+    word-wrap: break-word;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 100px;
+}
+
+.dialog{
+    width: 100%;
+    height: 100%;
+}
+
+.dialog_text{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 30%;
+    left: 19%;
+    top: 1%;
+    overflow: hidden;
+    font-size: calc(4vw + 4vh + 2vmin);
+    background-image: url("domi.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 center;
+    image-rendering: pixelated;
+}
+
+.dialog_responses{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    width: 50%;
+    height: 30%;
+    left: 19%;
+    background-color: blueviolet;
+    top: 39%;
+}
+
+.dialog_img{
+    position: absolute;
+    width: 30vh;
+    height: 40vh;
+    top: 29%;
+    left: 0.5%;
+    background-color: aquamarine;
+}
+
+.arrow{
+    background-image: url("strzalka.png");
+    background-size: 190px 190px;
+    background-position: center;
+    width: 96px;
+    height: 96px;
+}
+
+
+img, #room{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+.player0{
+    background-image: url("./cube.png");
+    width: 75px;
+    height: 75px;
+}
+
+.room0{
+    background-image: url("./rooms/pokoj.png");
 }
