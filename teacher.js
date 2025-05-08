@@ -77,15 +77,22 @@ class teacher {
         }
     }
 
-    async quizDone(){
-        console.log("done");
-        let avg = this.sum/this.numberOfQuestions*100;
-        currentPlayer().quizesDone[this.quizId] = avg;
-        document.getElementById("question").innerHTML = `Brawo. Zdałeś test na ${avg}%`;
-        document.querySelector(".dialog_responses").innerHTML = "";
-        await delay(2000);
-        document.getElementsByClassName("dialog")[0].remove();
+    async quizDone() {
+    console.log("done");
+    let avg = this.sum / this.numberOfQuestions * 100;
+    currentPlayer().quizesDone[this.quizId] = avg;
+
+    if (avg >= 50) {
+        document.getElementById("question").innerHTML = `Brawo! Zdałeś test na ${avg}%`;
+    } else {
+        document.getElementById("question").innerHTML = `Niestety, nie zdałeś. Twój wynik to ${avg}%`;
     }
+
+    document.querySelector(".dialog_responses").innerHTML = "";
+    await delay(2000);
+    document.getElementsByClassName("dialog")[0].remove();
+}
+    
 }
 
 function shuffle(array) { // great shuffle algorithm (not mine)
