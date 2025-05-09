@@ -1,4 +1,4 @@
-const sale = [
+const rooms = [
   {
     salename: "Sala 101",
     image: "sale co xaw chciał zrobione/1 pietro/101.png",
