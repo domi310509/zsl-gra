@@ -75,11 +75,64 @@ body{
     margin-left: 0vh;
 }
 
-.quiz_section{
+/*.quiz_section{
     word-wrap: break-word;
     text-align: center;
     vertical-align: middle;
-    font-size: 100px;
+}
+*/
+
+.stairMenu{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    width: 50%;
+    height: 30%;
+    left: 9.58vw;
+    background-color: blueviolet;
+    top: 39%;
+}
+
+.stairMenuSection{
+    display: flex;               
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    word-break: break-word;
+    font-size: 90px;
+    outline: 1px solid black;
+    outline-offset: -1px; /* żeby linie nachodziły na siebie */
+}
+
+.stairMenuSection:nth-child(2n) {
+    border-right: none;
+}
+  
+/* usuń dolne krawędzie z ostatniego rzędu */
+.stairMenuSection:nth-child(n+3) {
+    border-bottom: none;
+}
+
+.quiz_section {
+    display: flex;               
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    word-break: break-word;
+    font-size: 1px;
+    outline: 1px solid black;
+    outline-offset: -1px; /* żeby linie nachodziły na siebie */
+}
+
+.quiz_section:nth-child(2n) {
+    border-right: none;
+}
+  
+/* usuń dolne krawędzie z ostatniego rzędu */
+.quiz_section:nth-child(n+3) {
+    border-bottom: none;
 }
 
 .dialog{
@@ -96,7 +149,6 @@ body{
     left: 19%;
     top: 1%;
     overflow: hidden;
-    font-size: calc(4vw + 4vh + 2vmin);
     background-image: url("images/pobrane.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;

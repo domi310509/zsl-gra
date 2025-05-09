@@ -7,3 +7,7 @@ class player{
         this.currentRoom;
     }
 }
+
+function nextPlayer(){
+    console.log("Nastepny gracz")
+}

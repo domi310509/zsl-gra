@@ -140,7 +140,7 @@ button#startGame{
  <div id="character-container">
         <div class="character-slot">
           <input type="text" placeholder="Gracz 1" />
-          <select>
+          <select id='1'>
             <option>Programista</option>
             <option>Informatyk</option>
             <option>Robotyk</option>
@@ -149,7 +149,7 @@ button#startGame{
         </div>
         <div class="character-slot">
           <input type="text" placeholder="Gracz 2" />
-          <select>
+          <select id='2'>
             <option>Programista</option>
             <option>Informatyk</option>
             <option>Robotyk</option>
@@ -158,7 +158,7 @@ button#startGame{
         </div>
         <div class="character-slot">
           <input type="text" placeholder="Gracz 3" />
-          <select>
+          <select id='3'>
             <option>Programista</option>
             <option>Informatyk</option>
             <option>Robotyk</option>
@@ -167,7 +167,7 @@ button#startGame{
         </div>
         <div class="character-slot">
           <input type="text" placeholder="Gracz 4" />
-          <select>
+          <select id='4'>
             <option>Programista</option>
             <option>Informatyk</option>
             <option>Robotyk</option>
@@ -195,7 +195,9 @@ button#startGame{
 
 function startGame(){
   for(let i = 1; i<5; i++){
-    players[i-1] = new player(`gracz${i}`, document.getElementById(i).options[document.getElementById(i).selectedIndex].value, 0); ///////////////////////////////////////////////////////// Tu to też dodaj Wojtek
+    let name = document.querySelector(`[placeholder="Gracz ${i}"]`).value || document.querySelector(`[placeholder="Gracz ${i}"]`).placeholder;
+    let profession = document.getElementById(i).options[document.getElementById(i).selectedIndex].value;
+    players[i-1] = new player(name, profession, 0);
   }
   document.getElementById("playerSelectStyle").remove();
   document.body.innerHTML = `<div class="row">
@@ -221,7 +223,7 @@ function startGame(){
             Gracz 3
         </div>
     </div>`;
-  invokeMap(0);
+  invokeMap(1);
   showPlayers();
   console.log(players)
 }
