@@ -42,5 +42,5 @@ const sale = [
    {
     salename: "sala 09a",
     image: "sale co xaw chciał zrobione/sale 0/09a.png",
-  },
+  }
 ];
