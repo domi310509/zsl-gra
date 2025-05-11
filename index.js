@@ -15,6 +15,12 @@ function showPlayers() {
     for (let i = 0; i < 4; i++) {
         document.getElementById("player" + i).innerHTML = ("Imie:" + players[i].name + "<br>Rok:" + players[i].year + "<br>Ilość quizów zrobionych:" + players[i].quizesDone + "<br>W jakim pokoju jest:" + players[i].currentRoom);
     }
-    let first = players.pop();
-    players.unshift(first); 
+}
+
+function nextPlayer(){
+    let first = players.shift();
+    players.push(first); 
+
+    popUp(`Teraz gracz ${currentPlayer().name}`, 1000)
+    showPlayers();
 }
