@@ -12,8 +12,17 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 const currentPlayer = () => players[0];
 
 function showPlayers() {
-    for (let i = 0; i < 4; i++) {
-        document.getElementById("player" + i).innerHTML = ("Imie:" + players[i].name + "<br>Rok:" + players[i].year + "<br>Ilość quizów zrobionych:" + players[i].quizesDone);
+    for (let i = 0; i < players.length; i++) {
+        const player = players[i];
+        const quizesList = player.quizesDone.length > 0 
+            ? player.quizesDone.join(", ") 
+            : "Brak ukończonych quizów";
+
+        document.getElementById("player" + i).innerHTML = 
+            "Imię: " + player.name + "<br>" +
+            "Rok: " + player.year + "<br>" +
+            "Ilość quizów zrobionych: " + player.quizesDone.length + "<br>" +
+            "Lista ukończonych quizów: " + quizesList;
     }
 }
 
