@@ -4,7 +4,6 @@ class player{
         this.type = type;
         this.year = year;
         this.quizesDone = [];
-        this.currentRoom;
     }
 }
 

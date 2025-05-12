@@ -207,9 +207,7 @@ function startGame(){
             <div class="stats" id="player0">
                 Statystyki
             </div>
-            <div class="map" id="map">
-                Mapa
-            </div>
+          
         </div>
     </div>
     <div class="row">

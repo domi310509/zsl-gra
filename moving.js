@@ -162,7 +162,6 @@ function stairMenu(stairId) {
             invokeMap(3);
         } else if (stairId == "schody7" || stairId == "schody8") {
             popUp("Zabawne. Nie jesteś duchem i nie przenikniesz na wyższe piętro. Zabieram ci za to ture");
-            nextPlayer();
         } else {
             popUp("Nie ma takich schodów... (Nie klikaj w to więcej prosze :3)");
         }

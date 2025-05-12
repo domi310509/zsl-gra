@@ -13,7 +13,7 @@ const currentPlayer = () => players[0];
 
 function showPlayers() {
     for (let i = 0; i < 4; i++) {
-        document.getElementById("player" + i).innerHTML = ("Imie:" + players[i].name + "<br>Rok:" + players[i].year + "<br>Ilość quizów zrobionych:" + players[i].quizesDone + "<br>W jakim pokoju jest:" + players[i].currentRoom);
+        document.getElementById("player" + i).innerHTML = ("Imie:" + players[i].name + "<br>Rok:" + players[i].year + "<br>Ilość quizów zrobionych:" + players[i].quizesDone);
     }
 }
 
