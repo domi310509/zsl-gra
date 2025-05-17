@@ -24,7 +24,25 @@
     border: 5px solid #000000;
 }
 
-
+.timetable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff6cc;
+    width: 33vw;
+    height: 23vh;
+    margin-top: 2.4vh;
+    margin-bottom: 2.4vh;
+    margin-left: 2.4vh;
+    margin-right: 2.4vh;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
 
 .text{
     transform: translate(-50%, -50%);
