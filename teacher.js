@@ -102,6 +102,7 @@ class teacher {
 
         document.querySelector(".dialog_responses").innerHTML = "";
         await delay(2000);
+        nextPlayer();
         document.getElementsByClassName("dialog")[0].remove();
     }
 
