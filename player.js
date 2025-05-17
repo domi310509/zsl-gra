@@ -10,3 +10,7 @@ class player{
 function nextPlayer(){
     console.log("Nastepny gracz")
 }
+
+function hasCompletedAllQuizzes(player, allQuizIds) {
+    return allQuizIds.every(quizId => player.quizesDone.hasOwnProperty(quizId));
+}
