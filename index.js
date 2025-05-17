@@ -14,15 +14,15 @@ const currentPlayer = () => players[0];
 function showPlayers() {
     for (let i = 0; i < players.length; i++) {
         const player = players[i];
-        const quizesList = player.quizesDone.length > 0 
-            ? player.quizesDone.join(", ") 
+        const quizIds = Object.keys(player.quizesDone || {});
+        const quizesList = quizIds.length > 0
+            ? quizIds.map(qid => `Quiz ${qid}: ${player.quizesDone[qid].toFixed(1)}%`).join("<br>")
             : "Brak ukończonych quizów";
-
-        document.getElementById("player" + i).innerHTML = 
+        document.getElementById("player" + i).innerHTML =
             "Imię: " + player.name + "<br>" +
             "Rok: " + player.year + "<br>" +
-            "Ilość quizów zrobionych: " + player.quizesDone.length + "<br>" +
-            "Lista ukończonych quizów: " + quizesList;
+            "Ilość quizów zrobionych: " + quizIds.length + "<br>" +
+            "Lista ukończonych quizów:<br>" + quizesList;
     }
 }
 
