@@ -191,9 +191,10 @@ body{
     position: absolute;
     align-items: center;
     text-align: center;
-    width: 50%;
-    height: 30%;
-    left: 19%;
+    width: 45%;
+    height: 25%;
+    left: 18%;
+    right: 15%;
     top: 1%;
     overflow: hidden;
     background-image: url("images/pobrane.jpg");
@@ -201,18 +202,29 @@ body{
     background-size: 100% 100%;
     background-position: 0 center;
     image-rendering: pixelated;
+    background-color: #ffffff;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 5px solid #000000;
 }
 
 .dialog_responses{
     position: absolute;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: 1fr 1fr; /* Two equal rows */
-    width: 50%;
-    height: 30%;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    width: 45%;
+    height: 25%;
     left: 19%;
     background-color: blueviolet;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
     top: 39%;
+    border-radius: 20px;
 }
 
 .dialog_img{

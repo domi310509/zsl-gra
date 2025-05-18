@@ -13,6 +13,7 @@ function invokeMap(mapId) {
         <img src="images/mapa sali -1 (1).png" usemap="#image-map">
 
         <map name="image-map">
+            <area target="" alt="zakaz" title="zakaz" onClick="mapHandler('zakaz')" coords="273,398,322,483" shape="rect">
             <area target="" alt="01" title="01" onClick="mapHandler('01')" coords="145,398,271,528" shape="rect">
             <area target="" alt="bufet" title="bufet" onClick="mapHandler('bufet')" coords="324,403,696,527" shape="rect">
             <area target="" alt="szatnia1" title="szatnia1" onClick="mapHandler('szatnia')" coords="700,398,826,526" shape="rect">
@@ -170,7 +171,6 @@ function stairMenu(stairId) {
         close();
         if (stairId == "schody1" || stairId == "schody2") {
             popUp("Zabawne. Nie jesteś duchem i nie przenikniesz na niższe piętro. Zabieram ci za to ture");
-            nextPlayer();
         } else if (stairId == "schody3" || stairId == "schody4") {
             invokeMap(0);
         } else if (stairId == "schody5" || stairId == "schody6") {
@@ -196,6 +196,10 @@ async function mapHandler(id) {
     if (!readyForClick) return;
 
     switch (id) {
+        case "zakaz": {
+            popUp("Drugi budynek jest podczas remontu");
+            break;
+        }
         case "wc": {
             popUp("Toaleta jest przepełniona");
             break;
