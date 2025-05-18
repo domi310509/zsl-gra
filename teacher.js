@@ -171,7 +171,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "matura_matematyka": {
-            return new teacher("---", 2, "./pobrane.jpg", 50, [
+            return new teacher("---", 2, "./rzeczy na projekt/maturowy-export.png", 50, [
                 ["Ile rozwiązań ma równanie |x - 3| = x + 1?", "1", ["0", "2", "brak"]],
                 ["Ile wynosi granica lim(x→0) (sinx/x)?", "1", ["0", "∞", "x"]],
                 ["Rozwiąż nierówność: x² - 4x + 3 < 0", "x ∈ (1, 3)", ["x ∈ (-∞, 1)", "x ∈ (3, ∞)", "x ∈ (1, ∞)"]],
@@ -225,7 +225,7 @@ function getTeacher(teacherName) {
             ], 10);
         }
         case "matura_polski": {
-            return new teacher("---", 3, "./pobrane.jpg", 50, [
+            return new teacher("---", 3, "./rzeczy na projekt/maturowy-export.png", 50, [
                 ["Kto jest autorem 'Pana Tadeusza'?", "Adam Mickiewicz", ["Juliusz Słowacki", "Henryk Sienkiewicz", "Bolesław Prus"]],
                 ["Jakie są główne cechy romantyzmu?", "indywidualizm, irracjonalizm, bunt przeciw tradycji", ["racjonalizm, klasycyzm, harmonia", "realizm, obiektywizm, rozum", "stoicyzm, moralizm, altruizm"]],
                 ["Co to jest inwersja?", "przestawienie kolejności wyrazów w zdaniu", ["zmiana czasu w zdaniu", "zmiana formy gramatycznej", "zmiana struktury semantycznej"]],
@@ -273,7 +273,7 @@ function getTeacher(teacherName) {
             ], 10);
         }
         case "matura_angielski": {
-            return new teacher("---", 4, "./pobrane.jpg", 50, [
+            return new teacher("---", 4, "./rzeczy na projekt/maturowy-export.png", 50, [
                 ["What is the past tense of 'go'?", "went", ["goed", "gone", "going"]],
                 ["Which of the following is a synonym for 'happy'?", "joyful", ["sad", "angry", "tired"]],
                 ["What is the plural form of 'child'?", "children", ["childs", "childes", "childer"]],
@@ -326,7 +326,7 @@ function getTeacher(teacherName) {
             ], 10);
         }
         case "1_klasa_mat": {
-            return new teacher("---", 5, "./pobrane.jpg", 21, [
+            return new teacher("---", 5, "./rzeczy na projekt/matematyk.png", 21, [
                 ["Ile to -3 + 7?", "4", ["10", "-10", "3"]],
                 ["Pierwiastek kwadratowy z 36 to?", "6", ["9", "12", "5"]],
                 ["Rozwiąż: x + 5 = 9", "4", ["5", "3", "6"]],
@@ -352,7 +352,7 @@ function getTeacher(teacherName) {
         }
 
         case "2_klasa_mat": {
-            return new teacher("---", 6, "./pobrane.jpg", 21, [
+            return new teacher("---", 6, "./rzeczy na projekt/matematyk.png", 21, [
                 ["Rozwiąż równanie kwadratowe: x² - 5x + 6 = 0", "x = 2, x = 3", ["x = 1, x = 6", "x = -1, x = -6", "x = 2, x = -3"]],
                 ["Funkcja kwadratowa f(x) = x² - 4. Jakie ma pierwiastki?", "x = 2, x = -2", ["x = 1, x = -1", "x = 0, x = -4", "x = -2, x = -2"]],
                 ["Średnia arytmetyczna liczb 2, 5, 7, 10", "6", ["5", "7", "8"]],
@@ -379,7 +379,7 @@ function getTeacher(teacherName) {
         }
 
         case "3_klasa_mat": {
-            return new teacher("---", 7, "./pobrane.jpg", 21, [
+            return new teacher("---", 7, "./rzeczy na projekt/matematyk.png", 21, [
                 ["Oblicz sinus kąta 30°", "1/2", ["√3/2", "1", "√2/2"]],
                 ["Oblicz cosinus kąta 60°", "1/2", ["√2/2", "1", "√3/2"]],
                 ["Oblicz tangens kąta 45°", "1", ["0", "√3", "2"]],
@@ -406,7 +406,7 @@ function getTeacher(teacherName) {
         }
 
         case "4_klasa_mat": {
-            return new teacher("---", 8, "./pobrane.jpg", 21, [
+            return new teacher("---", 8, "./rzeczy na projekt/matematyk.png", 21, [
                 ["Oblicz granicę: lim (x→∞) (3x² + 2x) / (x² - 5x)", "3", ["2", "1", "4"]],
                 ["Oblicz pochodną funkcji f(x) = 5x³ - 3x²", "15x² - 6x", ["15x² - 3x", "15x³ - 6x²", "3x² - 6"]],
                 ["Oblicz sumę ciągu arytmetycznego: 2 + 4 + 6 + 8", "20", ["18", "22", "24"]],
@@ -433,7 +433,7 @@ function getTeacher(teacherName) {
         }
 
         case "5_klasa_mat": {
-            return new teacher("---", 9, "./pobrane.jpg", 21, [
+            return new teacher("---", 9, "./rzeczy na projekt/matematyk.png", 21, [
                 ["Rozwiąż równanie z parametrem: x² - px + q = 0, gdzie p = 4, q = 5", "x = 1, x = 5", ["x = 2, x = 3", "x = -1, x = 6", "x = 3, x = 4"]],
                 ["Dowód: Suma kątów w trójkącie wynosi 180°", "Tak", ["Nie", "Zależy", "Tylko w prostokątnych"]],
                 ["Rozwiąż nierówność: x² - 6x + 8 < 0", "x ∈ (2, 4)", ["x ∈ (1, 5)", "x ∈ (-∞, 2)", "x ∈ (3, 5)"]],
@@ -459,7 +459,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "1_klasa_ang": {
-            return new teacher("---", 10, "./pobrane.jpg", 21, [
+            return new teacher("---", 10, "./rzeczy na projekt/anglistka.png", 21, [
                 ["How do you say 'dzień dobry' in English?", "Good morning", ["Hello", "Good evening", "Good afternoon"]],
                 ["What is the opposite of 'big'?", "small", ["large", "huge", "tiny"]],
                 ["Translate: 'Jestem zmęczony.'", "I am tired", ["I am sleepy", "I am fine", "I am happy"]],
@@ -485,7 +485,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "2_klasa_ang": {
-            return new teacher("---", 11, "./pobrane.jpg", 21, [
+            return new teacher("---", 11, "./rzeczy na projekt/anglistka.png", 21, [
                 ["What is the past tense of 'run'?", "ran", ["runned", "runed", "ran"]],
                 ["Translate: 'Ona ma dwa koty.'", "She has two cats", ["She have two cats", "She has cat two", "She have two cat"]],
                 ["Which of these is a preposition?", "on", ["quick", "tall", "happy"]],
@@ -511,7 +511,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "3_klasa_ang": {
-            return new teacher("---", 12, "./pobrane.jpg", 21, [
+            return new teacher("---", 12, "./rzeczy na projekt/anglistka.png", 21, [
                 ["What is the past tense of 'write'?", "wrote", ["written", "writing", "wrote"]],
                 ["Translate: 'Mamy dużą kuchnię.'", "We have a big kitchen", ["We has a big kitchen", "We have big kitchen", "We has big kitchen"]],
                 ["Which sentence is correct?", "I don't like fish", ["I doesn't like fish", "I like don't fish", "I like no fish"]],
@@ -538,7 +538,7 @@ function getTeacher(teacherName) {
 
         }
         case "4_klasa_ang": {
-            return new teacher("---", 13, "./pobrane.jpg", 21, [
+            return new teacher("---", 13, "./rzeczy na projekt/anglistka.png", 21, [
                 ["What is the plural of 'child'?", "children", ["childs", "children's", "childes"]],
                 ["Translate: 'On ma psa.'", "He has a dog", ["He have a dog", "He has dogs", "He has a doggy"]],
                 ["Which of these is an adjective?", "happy", ["joy", "happiness", "happily"]],
@@ -565,7 +565,7 @@ function getTeacher(teacherName) {
 
         }
         case "5_klasa_ang": {
-            return new teacher("---", 14, "./pobrane.jpg", 21, [
+            return new teacher("---", 14, "./rzeczy na projekt/anglistka.png", 21, [
                 ["What is the past tense of 'begin'?", "began", ["begined", "began", "beganed"]],
                 ["Translate: 'Dziś jest piękna pogoda.'", "The weather is beautiful today", ["Today weather is beautiful", "Beautiful is the weather today", "Today is beautiful weather"]],
                 ["How do you say 'na pewno' in English?", "for sure", ["maybe", "probably", "certainly"]],
@@ -591,7 +591,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "1_klasa_pol": {
-            return new teacher("---", 15, "./pobrane.jpg", 21, [
+            return new teacher("---", 15, "./rzeczy na projekt/polonista.png", 21, [
                 ["Kto napisał „Pana Tadeusza”?", "Adam Mickiewicz", ["Juliusz Słowacki", "Zygmunt Krasiński", "Bolesław Prus"]],
                 ["Co to jest liryka?", "Rodzaj literacki", ["Epika", "Dramat", "Proza"]],
                 ["Jakie cechy ma bohater romantyczny?", "Poczucie buntu, indywidualizm", ["Moralność, porządek", "Zgodność z tradycją", "Skrucha, pokora"]],
@@ -617,7 +617,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "2_klasa_pol": {
-            return new teacher("---", 16, "./pobrane.jpg", 21, [
+            return new teacher("---", 16, "./rzeczy na projekt/polonista.png", 21, [
                 ["Kto napisał „Chłopów”?", "Władysław Reymont", ["Bolesław Prus", "Maria Konopnicka", "Józef Ignacy Kraszewski"]],
                 ["Co to jest epika?", "Rodzaj literacki przedstawiający wydarzenia", ["Dramat", "Liryka", "Epos"]],
                 ["Co to jest nowelistyka?", "Pisanie krótkich powieści", ["Opowiadanie", "Powieść", "Szkic"]],
@@ -643,7 +643,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "3_klasa_pol": {
-            return new teacher("---", 17, "./pobrane.jpg", 21, [
+            return new teacher("---", 17, "./rzeczy na projekt/polonista.png", 21, [
                 ["Kto napisał „Zbrodnię i karę”?", "Fiodor Dostojewski", ["Bolesław Prus", "Maria Dąbrowska", "Marek Hłasko"]],
                 ["Co to jest narracja?", "Sposób przedstawienia wydarzeń w tekście", ["Opis", "Dialog", "Monolog"]],
                 ["Co to jest wiersz liryczny?", "Wiersz wyrażający uczucia autora", ["Epos", "Powieść", "Drama"]],
@@ -669,7 +669,7 @@ function getTeacher(teacherName) {
             ], 5);
         }
         case "4_klasa_pol": {
-            return new teacher("---", 18, "./pobrane.jpg", 21, [
+            return new teacher("---", 18, "./rzeczy na projekt/polonista.png", 21, [
                 ["Co to jest synonim?", "Wyraz o podobnym znaczeniu", ["Antyteza", "Przeciwieństwo", "Hiperbola"]],
                 ["Kto napisał „Krzyżaków”?", "Henryk Sienkiewicz", ["Zygmunt Krasiński", "Adam Mickiewicz", "Bolesław Prus"]],
                 ["Co to jest alegoria?", "Przedstawienie pojęć przez obrazy", ["Metafora", "Symbole", "Porównanie"]],
@@ -697,7 +697,7 @@ function getTeacher(teacherName) {
 
         }
         case "5_klasa_pol": {
-            return new teacher("---", 19, "./pobrane.jpg", 21, [
+            return new teacher("---", 19, "./rzeczy na projekt/polonista.png", 21, [
                 ["Co to jest poezja?", "Literatura wierszowana wyrażająca uczucia", ["Proza", "Epika", "Dramat"]],
                 ["Kto napisał „Iliadę”?", "Homer", ["Wergiliusz", "Horacy", "Sofokles"]],
                 ["Co to jest epoka?", "Okres w historii literatury", ["Postać", "Gatunek", "Styl"]],
