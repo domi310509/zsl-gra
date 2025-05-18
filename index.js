@@ -16,13 +16,12 @@ function showPlayers() {
         const player = players[i];
         const quizIds = Object.keys(player.quizesDone || {});
         const quizesList = quizIds.length > 0
-            ? quizIds.map(qid => `Quiz ${qid}: ${player.quizesDone[qid].toFixed(1)}%`).join("<br>")
+            ? quizIds.map(qid => `${qidToName(qid)}: ${player.quizesDone[qid].toFixed(1)}%`).join("<br>")
             : "Brak ukończonych quizów";
-        document.getElementById("player" + i).innerHTML =
-            "Imię: " + player.name + "<br>" +
+        fitTextToContainer(document.getElementById("player" + i),  "<span>Imię: " + player.name + "</span>" +
             "Rok: " + player.year + "<br>" +
-            "Ilość quizów zrobionych: " + quizIds.length + "<br>" +
-            "Lista ukończonych quizów:<br>" + quizesList;
+            "Ilość quizów zrobionych: " + quizIds.length + "/3<br>" +
+            "Lista ukończonych quizów:<br>" + quizesList);
     }
 }
 

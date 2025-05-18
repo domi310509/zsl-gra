@@ -197,7 +197,7 @@ function startGame(){
   for(let i = 1; i<5; i++){
     let name = document.querySelector(`[placeholder="Gracz ${i}"]`).value || document.querySelector(`[placeholder="Gracz ${i}"]`).placeholder;
     let profession = document.getElementById(i).options[document.getElementById(i).selectedIndex].value;
-    players[i-1] = new player(name, profession, 0);
+    players[i-1] = new player(name, profession, 1);
   }
   document.getElementById("playerSelectStyle").remove();
   document.body.innerHTML = `<div class="row">
@@ -205,9 +205,13 @@ function startGame(){
         </div>
         <div class="column">
             <div class="stats" id="player0">
-                Statystyki
+              Statystyki
             </div>
-          
+            <div class="stats" style="height: 32vh; margin-bottom: 1vh;">
+              103: Polski <br>
+              037: Angielski <br>
+              207: Matematyka
+            </div>
         </div>
     </div>
     <div class="row">

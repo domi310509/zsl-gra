@@ -197,7 +197,7 @@ async function mapHandler(id) {
 
     switch (id) {
         case "wc": {
-            popUp("Toaleta jest nieczynna");
+            popUp("Toaleta jest przepełniona");
             break;
         }
         case "szatnia": {
@@ -256,242 +256,93 @@ async function mapHandler(id) {
             stairMenu("schody8");
             break;
         }
-        case "101": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "036": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "24": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "22": {
-            await startTeacherInteraction("matura_angielski");
-            break;
-        }
-        case "20": {
-            await startTeacherInteraction("5_klasa_ang");
-            break;
-        }
         case "18": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "15": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "14": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "102a": {
-            await startTeacherInteraction("matura_matematyka");
+            popUp("Nie ma pielegniarki");
             break;
         }
         case "103": {
-            await startTeacherInteraction("matura_polski");
+            if(currentPlayer.year <= 4){
+                await startTeacherInteraction(`${currentPlayer.year}_klasa_pol`);
+            }else{
+                await startTeacherInteraction(`matura_polski`);
+            }
             break;
         }
-        case "105": {
-            await startTeacherInteraction("2_klasa_pol");
-            break;
-        }
-        case "107": {
-            await startTeacherInteraction("4_klasa_pol");
-            break;
-        }
-        case "109": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "111": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "202": {
-            await startTeacherInteraction("4_klasa_mat");
-            break;
-        }
-        case "204": {
-            await startTeacherInteraction("2_klasa_mat");
-            break;
-        }
-        case "206": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "208": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "210": {
-            await startTeacherInteraction("matura_matematyka");
-            break;
-        }
-        case "205": {
-            await startTeacherInteraction("1_klasa_mat");
-            break;
-        }
-        case "203": {
-            await startTeacherInteraction("3_klasa_mat");
+        case "24": {
+            if(currentPlayer.year <= 4){
+                await startTeacherInteraction(`${currentPlayer.year}_klasa_ang`);
+            }else{
+                await startTeacherInteraction(`matura_angielski`);
+            }
             break;
         }
         case "207": {
-            await startTeacherInteraction("5_klasa_mat");
+            if(currentPlayer.year <= 4){
+                await startTeacherInteraction(`${currentPlayer.year}_klasa_mat`);
+            }else{
+                await startTeacherInteraction(`matura_matematyka`);
+            }
             break;
         }
-        case "025": {
-            await startTeacherInteraction("1_klasa_ang");
+        case "101":
+        case "036":
+        case "22":
+        case "20":
+        case "15":
+        case "14":
+        case "102a":
+        case "105":
+        case "107":
+        case "01":
+        case "037":
+        case "23":
+        case "16":
+        case "12/13":
+        case "10":
+        case "102b":
+        case "110a":
+        case "201":
+        case "209":
+        case "211":
+        case "02":
+        case "03":
+        case "05":
+        case "06":
+        case "07":
+        case "08":
+            popUp("Nie masz tu lekcji");
             break;
-        }
-        case "04": {
-            await startTeacherInteraction("2_klasa_ang");
-            break;
-        }
-        case "19": {
-            await startTeacherInteraction("3_klasa_ang");
-            break;
-        }
-        case "21": {
-            await startTeacherInteraction("4_klasa_ang");
-            break;
-        }
-        case "104": {
-            await startTeacherInteraction("1_klasa_pol");
-            break;
-        }
-        case "106": {
-            await startTeacherInteraction("3_klasa_pol");
-            break;
-        }
-        case "108": {
-            await startTeacherInteraction("5_klasa_pol");
-            break;
-        }
-        case "01": {
+        case "109":
+        case "111":
+        case "202":
+        case "204":
+        case "206":
+        case "208":
+        case "210":
+        case "205":
+        case "203":
+        case "025":
+        case "04":
+        case "19":
+        case "21":
+        case "104":
+        case "106":
+        case "108":
+        case "09":
+        case "11":
+        case "13":
+        case "17":
+        case "25":
+        case "26":
+        case "27":
+        case "28":
+        case "30":
+        case "31":
+        case "33":
+        case "34":
+        case "35":
             popUp("W sali nie ma nauczyciela");
             break;
-        }
-        case "037": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "23": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "16": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "12/13": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "10": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "102b": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "110a": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "201": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "209": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "211": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "02": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "03": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "05": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "06": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "07": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "08": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "09": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "11": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "13": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "17": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "25": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "26": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "27": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "28": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "30": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "31": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "33": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "34": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
-        case "35": {
-            popUp("W sali nie ma nauczyciela");
-            break;
-        }
         default: {
             console.error("Nieprawidłowy identyfikator: ", id);
             break;

@@ -67,6 +67,7 @@ body{
 
 .stats {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e1f7f0;  
@@ -88,6 +89,7 @@ body{
 
 .player {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f0e1f7;

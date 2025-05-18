@@ -4,7 +4,7 @@ function getRandomQuestions(questions, count) {
 }
 
 function fitTextToContainer(container, text, maxFontSize = 32, minFontSize = 8) {
-    container.textContent = text;
+    container.innerHTML = text;
     let fontSize = maxFontSize;
     container.style.fontSize = fontSize + 'px';
 
@@ -124,6 +124,37 @@ function shuffle(array) { // great shuffle algorithm (not mine)
     }
 
     return array;
+}
+
+function qidToName(qid){
+    switch(qid){
+        case '2':
+            return "Matura z matematyki";
+        case '3':
+            return "Matura z polskiego";
+        case '4':
+            return "Matura z angielskiego";
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+            return "Sprawdzian z matematyki";
+        case '10':
+        case '11':
+        case '12':
+        case '13':
+        case '14':
+            return "Sprawdzian z angielskiego"; 
+        case '15':
+        case '16':
+        case '17':
+        case '18':
+        case '19':
+            return "Sprawdzian z polskiego";
+        default:
+            return `Sprawdzian ${qid}`;
+    }
 }
 
 function getTeacher(teacherName) {
