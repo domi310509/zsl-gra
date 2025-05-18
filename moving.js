@@ -239,6 +239,10 @@ async function mapHandler(id) {
             popUp("Nie chcesz tam trafić");
             break;
         }
+        case "bufet": {
+            popUp("Łącznik jest zamknięty");
+            break;
+        }
         case "schody1": {
             await stairMenu("schody1");
             break;
