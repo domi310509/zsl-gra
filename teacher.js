@@ -596,7 +596,7 @@ function getTeacher(teacherName) {
                 ["Co to jest liryka?", "Rodzaj literacki", ["Epika", "Dramat", "Proza"]],
                 ["Jakie cechy ma bohater romantyczny?", "Poczucie buntu, indywidualizm", ["Moralność, porządek", "Zgodność z tradycją", "Skrucha, pokora"]],
                 ["Która z postaci jest bohaterem „Pana Tadeusza”?", "Tadeusz Soplica", ["Jacek Soplica", "Stolnik", "Mickiewicz"]],
-                ["Czym charakteryzuje się ballada?", "Krótka forma liryczno-epicka", ["Epos", "Powieść", "Tragedia"]],
+                ["Czym charakteryzuje się ballada?", "Połączeniem elementów epiki, liryki i dramatu ", ["Epos", "Powieść", "Tragedia"]],
                 ["W którym roku powstał „Pan Tadeusz”?", "1834", ["1822", "1842", "1830"]],
                 ["Co to jest metafora?", "Zamiana znaczeń słów", ["Porównanie", "Symbol", "Ironia"]],
                 ["Kto napisał „Zbrodnię i karę”?", "Fiodor Dostojewski", ["Leo Tolstoj", "Charles Dickens", "Ernest Hemingway"]],
