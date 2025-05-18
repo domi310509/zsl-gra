@@ -77,9 +77,14 @@ class teacher {
     async quizHandler(i) {
         if (i == this.currentCorrectAnswer + 1) {
             console.log(`Dobra odpowiedź!!!! (${i})`);
+            //document.getElementById("question").innerHTML = `Dobra odpowiedź`;
+            //await delay(1500);
+            // Wszystko się psuje
             this.sum++;
         } else {
             console.log(`Zła odpowiedź (${i})`);
+            //document.getElementById("question").innerHTML = `Zła odpowiedź`;
+            //await delay(1500);
         }
         this.currentQuestion++;
         if (this.currentQuestion < this.questions.length) {

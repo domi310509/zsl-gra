@@ -13,6 +13,7 @@ function invokeMap(mapId) {
         <img src="images/mapa sali -1 (1).png" usemap="#image-map">
 
         <map name="image-map">
+            <area target="" alt="zakaz" title="zakaz" onClick="mapHandler('zakaz')" coords="273,398,322,483" shape="rect">
             <area target="" alt="01" title="01" onClick="mapHandler('01')" coords="145,398,271,528" shape="rect">
             <area target="" alt="bufet" title="bufet" onClick="mapHandler('bufet')" coords="324,403,696,527" shape="rect">
             <area target="" alt="szatnia1" title="szatnia1" onClick="mapHandler('szatnia')" coords="700,398,826,526" shape="rect">
@@ -140,19 +141,28 @@ function popUp(text, time = 2000) {
     }, time);
 }
 
+async function popUpAsync(text, time = 3000) {
+    document.getElementById("game_window").innerHTML += `<div class="popup"></div>`;
+    fitTextToContainer(document.querySelector(`div[class="popup"]`), text, 200);
+    readyForClick = false;
+    await delay(time);
+    document.getElementsByClassName("popup")[0].remove();
+    readyForClick = true;
+}
+
 async function startTeacherInteraction(teacherId) {
     let teacher = getTeacher(teacherId);
     await teacher.loadDialogDOM();
     await teacher.quiz(0);
 }
 
-function stairMenu(stairId) {
+async function stairMenu(stairId) {
     function close() {
         readyForClick = true;
         document.querySelector('div[class="popup"]').remove()
         document.querySelector('div[class="stairMenu"]').remove()
     }
-    function up() {
+    async function up() {
         close()
         if (stairId == "schody1" || stairId == "schody2") {
             invokeMap(1);
@@ -161,15 +171,16 @@ function stairMenu(stairId) {
         } else if (stairId == "schody5" || stairId == "schody6") {
             invokeMap(3);
         } else if (stairId == "schody7" || stairId == "schody8") {
-            popUp("Zabawne. Nie jesteś duchem i nie przenikniesz na wyższe piętro. Zabieram ci za to ture");
+            await popUpAsync("Zabawne. Nie jesteś duchem i nie przenikniesz na wyższe piętro. Zabieram ci za to ture");
+            nextPlayer();
         } else {
             popUp("Nie ma takich schodów... (Nie klikaj w to więcej prosze :3)");
         }
     }
-    function down() {
+    async function down() {
         close();
         if (stairId == "schody1" || stairId == "schody2") {
-            popUp("Zabawne. Nie jesteś duchem i nie przenikniesz na niższe piętro. Zabieram ci za to ture");
+            await popUpAsync("Zabawne. Nie jesteś duchem i nie przenikniesz na niższe piętro. Zabieram ci za to ture");
             nextPlayer();
         } else if (stairId == "schody3" || stairId == "schody4") {
             invokeMap(0);
@@ -196,6 +207,10 @@ async function mapHandler(id) {
     if (!readyForClick) return;
 
     switch (id) {
+        case "zakaz": {
+            popUp("Drugi budynek jest podczas remontu");
+            break;
+        }
         case "wc": {
             popUp("Toaleta jest przepełniona");
             break;
@@ -225,35 +240,35 @@ async function mapHandler(id) {
             break;
         }
         case "schody1": {
-            stairMenu("schody1");
+            await stairMenu("schody1");
             break;
         }
         case "schody2": {
-            stairMenu("schody2");
+            await stairMenu("schody2");
             break;
         }
         case "schody3": {
-            stairMenu("schody3");
+            await stairMenu("schody3");
             break;
         }
         case "schody4": {
-            stairMenu("schody4");
+            await stairMenu("schody4");
             break;
         }
         case "schody5": {
-            stairMenu("schody5");
+            await stairMenu("schody5");
             break;
         }
         case "schody6": {
-            stairMenu("schody6");
+            await stairMenu("schody6");
             break;
         }
         case "schody7": {
-            stairMenu("schody7");
+            await stairMenu("schody7");
             break;
         }
         case "schody8": {
-            stairMenu("schody8");
+            await stairMenu("schody8");
             break;
         }
         case "18": {
@@ -268,7 +283,7 @@ async function mapHandler(id) {
             }
             break;
         }
-        case "24": {
+        case "037": {
             if(currentPlayer.year <= 4){
                 await startTeacherInteraction(`${currentPlayer.year}_klasa_ang`);
             }else{
@@ -294,7 +309,7 @@ async function mapHandler(id) {
         case "105":
         case "107":
         case "01":
-        case "037":
+        case "24":
         case "23":
         case "16":
         case "12/13":
