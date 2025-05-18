@@ -210,7 +210,7 @@ function startGame(){
             <div class="stats" style="height: 32vh; margin-bottom: 1vh;">
               103: Polski <br>
               037: Angielski <br>
-              207: Matematyka
+              206: Matematyka
             </div>
         </div>
     </div>

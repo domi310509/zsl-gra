@@ -131,7 +131,7 @@ function invokeRoom(roomId) {
     imageMapResize();
 }
 
-function popUp(text, time = 2000) {
+function popUp(text, time = 1500) {
     document.getElementById("game_window").innerHTML += `<div class="popup"></div>`;
     fitTextToContainer(document.querySelector(`div[class="popup"]`), text, 200);
     readyForClick = false;
@@ -172,7 +172,7 @@ async function stairMenu(stairId) {
             invokeMap(3);
         } else if (stairId == "schody7" || stairId == "schody8") {
             await popUpAsync("Zabawne. Nie jesteś duchem i nie przenikniesz na wyższe piętro. Zabieram ci za to ture");
-            nextPlayer();
+            await nextPlayer();
         } else {
             popUp("Nie ma takich schodów... (Nie klikaj w to więcej prosze :3)");
         }
@@ -181,7 +181,7 @@ async function stairMenu(stairId) {
         close();
         if (stairId == "schody1" || stairId == "schody2") {
             await popUpAsync("Zabawne. Nie jesteś duchem i nie przenikniesz na niższe piętro. Zabieram ci za to ture");
-            nextPlayer();
+            await nextPlayer();
         } else if (stairId == "schody3" || stairId == "schody4") {
             invokeMap(0);
         } else if (stairId == "schody5" || stairId == "schody6") {
@@ -276,24 +276,24 @@ async function mapHandler(id) {
             break;
         }
         case "103": {
-            if(currentPlayer.year <= 4){
-                await startTeacherInteraction(`${currentPlayer.year}_klasa_pol`);
+            if(currentPlayer().year <= 4){
+                await startTeacherInteraction(`${currentPlayer().year}_klasa_pol`);
             }else{
                 await startTeacherInteraction(`matura_polski`);
             }
             break;
         }
         case "037": {
-            if(currentPlayer.year <= 4){
-                await startTeacherInteraction(`${currentPlayer.year}_klasa_ang`);
+            if(currentPlayer().year <= 4){
+                await startTeacherInteraction(`${currentPlayer().year}_klasa_ang`);
             }else{
                 await startTeacherInteraction(`matura_angielski`);
             }
             break;
         }
-        case "207": {
-            if(currentPlayer.year <= 4){
-                await startTeacherInteraction(`${currentPlayer.year}_klasa_mat`);
+        case "206": {
+            if(currentPlayer().year <= 4){
+                await startTeacherInteraction(`${currentPlayer().year}_klasa_mat`);
             }else{
                 await startTeacherInteraction(`matura_matematyka`);
             }
@@ -331,7 +331,7 @@ async function mapHandler(id) {
         case "111":
         case "202":
         case "204":
-        case "206":
+        case "207":
         case "208":
         case "210":
         case "205":

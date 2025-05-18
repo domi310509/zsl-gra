@@ -98,17 +98,17 @@ class teacher {
         console.log("done");
         let avg = this.sum / this.questions.length * 100;
         currentPlayer().quizesDone[this.quizId] = avg;
-
+        console.log(this.quizId, currentPlayer().quizesDone[this.quizId])
         if (avg >= 50) {
             document.getElementById("question").innerHTML = `Brawo! Zdałeś test na ${avg}%`;
         } else {
-            document.getElementById("question").innerHTML = `Niestety, nie zdałeś. Twój wynik to ${avg}%`;
+            document.getElementById("question").innerHTML = `Nie zdałeś. Twój wynik to ${avg}%`;
         }
 
         document.querySelector(".dialog_responses").innerHTML = "";
         await delay(2000);
-        nextPlayer();
         document.getElementsByClassName("dialog")[0].remove();
+        await nextPlayer();
     }
 
 }

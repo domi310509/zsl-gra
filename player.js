@@ -6,7 +6,3 @@ class player{
         this.quizesDone = [];
     }
 }
-
-function hasCompletedAllQuizzes(player, allQuizIds) {
-    return allQuizIds.every(quizId => player.quizesDone.hasOwnProperty(quizId));
-}

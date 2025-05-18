@@ -25,10 +25,32 @@ function showPlayers() {
     }
 }
 
-function nextPlayer(){
+function checkQuizes(playerId){
+    let quizes = Object.values(players[playerId].quizesDone);
+    if(quizes.length >= 3){
+        for(let i = 0; i<quizes.length; i++){
+            if(!quizes[i] || quizes[i] < 50) return false;
+        }
+        return true;
+    } else {
+        return false;
+    }
+}
+
+async function nextPlayer(){
     let first = players.shift();
     players.push(first); 
 
-    popUp(`Teraz gracz ${currentPlayer().name}`, 1000)
     showPlayers();
+    await popUpAsync(`Teraz gracz ${currentPlayer().name}`, 1000)
+
+    if(checkQuizes(0)){
+        if(currentPlayer().year == 5){
+            endScreen(0);
+        } else {
+            currentPlayer().year++;
+            currentPlayer().quizesDone = [];
+            popUp(`Level up`, 1000)
+        }
+    }
 }
